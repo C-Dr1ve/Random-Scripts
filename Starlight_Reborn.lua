@@ -870,7 +870,7 @@ local script = STAR["2d"];
 		exit = mainframe.Exit:FindFirstChildWhichIsA("TextButton"),
 	}
 	
-	local blacklistedstrings = {"CheatDetected", "ExploitDetected"}
+	local blacklistedstrings = {"CheatDetected", "ExploitDetected", "MouseLock", "MouseLoc"}
 	local holygrail = nil
 	local safetime = 0.32
 	local backdoored = false
