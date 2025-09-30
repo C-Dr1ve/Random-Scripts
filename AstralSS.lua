@@ -1,695 +1,1695 @@
-local AST = {};
+--astral
+--by C:\Drive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local G2L = {};
 
 -- StarterGui.Astral Serverside
-AST["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-AST["1"]["IgnoreGuiInset"] = true;
-AST["1"]["DisplayOrder"] = 1999999999;
-AST["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-AST["1"]["Name"] = [[Astral Serverside]];
-AST["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-AST["1"]["ResetOnSpawn"] = false;
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["DisplayOrder"] = 1999999999;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[Astral Serverside]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.Astral Serverside.MainFrame
-AST["2"] = Instance.new("Frame", AST["1"]);
-AST["2"]["BorderSizePixel"] = 0;
-AST["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-AST["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-AST["2"]["ClipsDescendants"] = true;
-AST["2"]["Size"] = UDim2.new(0, 450, 0, 275);
-AST["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-AST["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["2"]["Name"] = [[MainFrame]];
-AST["2"]["BackgroundTransparency"] = 0.5;
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["ClipsDescendants"] = true;
+G2L["2"]["Size"] = UDim2.new(0, 450, 0, 275);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[MainFrame]];
+G2L["2"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.Corner
-AST["3"] = Instance.new("UICorner", AST["2"]);
-AST["3"]["Name"] = [[Corner]];
-AST["3"]["CornerRadius"] = UDim.new(0, 12);
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["Name"] = [[Corner]];
+G2L["3"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.Border
-AST["4"] = Instance.new("UIStroke", AST["2"]);
-AST["4"]["Name"] = [[Border]];
-AST["4"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Name"] = [[Border]];
+G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.Astral Serverside.MainFrame.Border.Rainbow
-AST["5"] = Instance.new("UIGradient", AST["4"]);
-AST["5"]["Name"] = [[Rainbow]];
-AST["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
+G2L["5"] = Instance.new("UIGradient", G2L["4"]);
+G2L["5"]["Name"] = [[Rainbow]];
+G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
 
 
 -- StarterGui.Astral Serverside.MainFrame.Border.Rainbow.Rotation
-AST["6"] = Instance.new("LocalScript", AST["5"]);
-AST["6"]["Name"] = [[Rotation]];
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+G2L["6"]["Name"] = [[Rotation]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.Drag
-AST["7"] = Instance.new("LocalScript", AST["2"]);
-AST["7"]["Name"] = [[Drag]];
+G2L["7"] = Instance.new("LocalScript", G2L["2"]);
+G2L["7"]["Name"] = [[Drag]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame
-AST["8"] = Instance.new("Frame", AST["2"]);
-AST["8"]["Visible"] = false;
-AST["8"]["BorderSizePixel"] = 0;
-AST["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["8"]["ClipsDescendants"] = true;
-AST["8"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["8"]["Name"] = [[ScanningFrame]];
-AST["8"]["BackgroundTransparency"] = 1;
+G2L["8"] = Instance.new("Frame", G2L["2"]);
+G2L["8"]["Visible"] = false;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["ClipsDescendants"] = true;
+G2L["8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Name"] = [[ScanningFrame]];
+G2L["8"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Corner
-AST["9"] = Instance.new("UICorner", AST["8"]);
-AST["9"]["Name"] = [[Corner]];
-AST["9"]["CornerRadius"] = UDim.new(0, 12);
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+G2L["9"]["Name"] = [[Corner]];
+G2L["9"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Description
-AST["a"] = Instance.new("TextLabel", AST["8"]);
-AST["a"]["TextWrapped"] = true;
-AST["a"]["TextStrokeTransparency"] = 0;
-AST["a"]["BorderSizePixel"] = 0;
-AST["a"]["TextSize"] = 14;
-AST["a"]["TextScaled"] = true;
-AST["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["a"]["BackgroundTransparency"] = 1;
-AST["a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-AST["a"]["Size"] = UDim2.new(1, -50, 0, 125);
-AST["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["a"]["Text"] = [[The game might freeze, don't worry it's scanning though.]];
-AST["a"]["Name"] = [[Description]];
-AST["a"]["Position"] = UDim2.new(0.5, 0, 0.5, 48);
+G2L["a"] = Instance.new("TextLabel", G2L["8"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["TextStrokeTransparency"] = 0;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a"]["Size"] = UDim2.new(1, -50, 0, 125);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[The game might freeze, don't worry it's scanning though.]];
+G2L["a"]["Name"] = [[Description]];
+G2L["a"]["Position"] = UDim2.new(0.5, 0, 0.5, 48);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Title
-AST["b"] = Instance.new("TextLabel", AST["8"]);
-AST["b"]["TextWrapped"] = true;
-AST["b"]["TextStrokeTransparency"] = 0;
-AST["b"]["BorderSizePixel"] = 0;
-AST["b"]["TextSize"] = 14;
-AST["b"]["TextScaled"] = true;
-AST["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["b"]["BackgroundTransparency"] = 1;
-AST["b"]["Size"] = UDim2.new(1, 0, 0, 64);
-AST["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["b"]["Text"] = [[Astral Serverside]];
-AST["b"]["Name"] = [[Title]];
-AST["b"]["Position"] = UDim2.new(0, 0, 0, 10);
+G2L["b"] = Instance.new("TextLabel", G2L["8"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["TextStrokeTransparency"] = 0;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(1, 0, 0, 64);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Astral Serverside]];
+G2L["b"]["Name"] = [[Title]];
+G2L["b"]["Position"] = UDim2.new(0, 0, 0, 10);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningHandler
-AST["c"] = Instance.new("LocalScript", AST["2"]);
-AST["c"]["Name"] = [[ScanningHandler]];
+G2L["c"] = Instance.new("LocalScript", G2L["2"]);
+G2L["c"]["Name"] = [[ScanningHandler]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame
-AST["d"] = Instance.new("Frame", AST["2"]);
-AST["d"]["BorderSizePixel"] = 0;
-AST["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["d"]["ClipsDescendants"] = true;
-AST["d"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["d"]["Name"] = [[ExecutionFrame]];
-AST["d"]["BackgroundTransparency"] = 1;
+G2L["d"] = Instance.new("Frame", G2L["2"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["ClipsDescendants"] = true;
+G2L["d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Name"] = [[ExecutionFrame]];
+G2L["d"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Corner
-AST["e"] = Instance.new("UICorner", AST["d"]);
-AST["e"]["Name"] = [[Corner]];
-AST["e"]["CornerRadius"] = UDim.new(0, 12);
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["Name"] = [[Corner]];
+G2L["e"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox
-AST["f"] = Instance.new("Frame", AST["d"]);
-AST["f"]["BorderSizePixel"] = 0;
-AST["f"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-AST["f"]["AnchorPoint"] = Vector2.new(0.5, 0);
-AST["f"]["ClipsDescendants"] = true;
-AST["f"]["Size"] = UDim2.new(1, -50, 0, 175);
-AST["f"]["Position"] = UDim2.new(0.5, 0, 0, 50);
-AST["f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-AST["f"]["Name"] = [[FastColoredTextbox]];
-AST["f"]["BackgroundTransparency"] = 1;
+G2L["f"] = Instance.new("Frame", G2L["d"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["f"]["ClipsDescendants"] = true;
+G2L["f"]["Size"] = UDim2.new(1, -50, 0, 175);
+G2L["f"]["Position"] = UDim2.new(0.5, 0, 0, 50);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Name"] = [[FastColoredTextbox]];
+G2L["f"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll
-AST["10"] = Instance.new("ScrollingFrame", AST["f"]);
-AST["10"]["Active"] = true;
-AST["10"]["ZIndex"] = 2;
-AST["10"]["BorderSizePixel"] = 0;
-AST["10"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-AST["10"]["TopImage"] = [[]];
-AST["10"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-AST["10"]["Name"] = [[Scroll]];
-AST["10"]["BottomImage"] = [[]];
-AST["10"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["10"]["ScrollBarImageColor3"] = Color3.fromRGB(43, 43, 43);
-AST["10"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
-AST["10"]["ScrollBarThickness"] = 17;
-AST["10"]["BackgroundTransparency"] = 1;
+G2L["10"] = Instance.new("ScrollingFrame", G2L["f"]);
+G2L["10"]["Active"] = true;
+G2L["10"]["ZIndex"] = 2;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["10"]["TopImage"] = [[]];
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["10"]["Name"] = [[Scroll]];
+G2L["10"]["BottomImage"] = [[]];
+G2L["10"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["10"]["ScrollBarImageColor3"] = Color3.fromRGB(43, 43, 43);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
+G2L["10"]["ScrollBarThickness"] = 17;
+G2L["10"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.TextBox
-AST["11"] = Instance.new("TextBox", AST["10"]);
-AST["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-AST["11"]["BorderSizePixel"] = 0;
-AST["11"]["TextWrapped"] = true;
-AST["11"]["TextTransparency"] = 0.75;
-AST["11"]["TextSize"] = 15;
-AST["11"]["TextColor3"] = Color3.fromRGB(42, 42, 42);
-AST["11"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-AST["11"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
-AST["11"]["RichText"] = true;
-AST["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["11"]["MultiLine"] = true;
-AST["11"]["ClearTextOnFocus"] = false;
-AST["11"]["Size"] = UDim2.new(10, -27, 1, 0);
-AST["11"]["Position"] = UDim2.new(0, 17, 0, 0);
-AST["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["11"]["Text"] = [[]];
-AST["11"]["BackgroundTransparency"] = 1;
+G2L["11"] = Instance.new("TextBox", G2L["10"]);
+G2L["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["TextTransparency"] = 0.75;
+G2L["11"]["TextSize"] = 15;
+G2L["11"]["TextColor3"] = Color3.fromRGB(42, 42, 42);
+G2L["11"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
+G2L["11"]["RichText"] = true;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["MultiLine"] = true;
+G2L["11"]["ClearTextOnFocus"] = false;
+G2L["11"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["11"]["Position"] = UDim2.new(0, 17, 0, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.Highlighting
-AST["12"] = Instance.new("TextLabel", AST["10"]);
-AST["12"]["TextWrapped"] = true;
-AST["12"]["BorderSizePixel"] = 0;
-AST["12"]["TextSize"] = 15;
-AST["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-AST["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-AST["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["12"]["BackgroundTransparency"] = 1;
-AST["12"]["RichText"] = true;
-AST["12"]["Size"] = UDim2.new(10, -27, 1, 0);
-AST["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["12"]["Text"] = [[]];
-AST["12"]["Name"] = [[Highlighting]];
-AST["12"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["12"] = Instance.new("TextLabel", G2L["10"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 15;
+G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["RichText"] = true;
+G2L["12"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[]];
+G2L["12"]["Name"] = [[Highlighting]];
+G2L["12"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LineSelector
-AST["13"] = Instance.new("Frame", AST["10"]);
-AST["13"]["ZIndex"] = -7;
-AST["13"]["BorderSizePixel"] = 0;
-AST["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["13"]["Size"] = UDim2.new(1, 0, 0, 15);
-AST["13"]["Position"] = UDim2.new(0, 20, 0, 0);
-AST["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["13"]["Name"] = [[LineSelector]];
-AST["13"]["BackgroundTransparency"] = 1;
+G2L["13"] = Instance.new("Frame", G2L["10"]);
+G2L["13"]["ZIndex"] = -7;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["13"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Name"] = [[LineSelector]];
+G2L["13"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.Cursor
-AST["14"] = Instance.new("Frame", AST["10"]);
-AST["14"]["BorderSizePixel"] = 0;
-AST["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["14"]["Size"] = UDim2.new(0, 1, 0, 15);
-AST["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["14"]["Name"] = [[Cursor]];
+G2L["14"] = Instance.new("Frame", G2L["10"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Size"] = UDim2.new(0, 1, 0, 15);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Name"] = [[Cursor]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.TextMeasurer
-AST["15"] = Instance.new("TextLabel", AST["10"]);
-AST["15"]["BorderSizePixel"] = 0;
-AST["15"]["TextSize"] = 15;
-AST["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-AST["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-AST["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["15"]["BackgroundTransparency"] = 1;
-AST["15"]["RichText"] = true;
-AST["15"]["Size"] = UDim2.new(10, -27, 1, 0);
-AST["15"]["Visible"] = false;
-AST["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["15"]["Text"] = [[]];
-AST["15"]["Name"] = [[TextMeasurer]];
-AST["15"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["15"] = Instance.new("TextLabel", G2L["10"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 15;
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["RichText"] = true;
+G2L["15"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["15"]["Visible"] = false;
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[]];
+G2L["15"]["Name"] = [[TextMeasurer]];
+G2L["15"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesValue
-AST["16"] = Instance.new("NumberValue", AST["10"]);
-AST["16"]["Name"] = [[LinesValue]];
-AST["16"]["Value"] = 1;
+G2L["16"] = Instance.new("NumberValue", G2L["10"]);
+G2L["16"]["Name"] = [[LinesValue]];
+G2L["16"]["Value"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame
-AST["17"] = Instance.new("Frame", AST["10"]);
-AST["17"]["BorderSizePixel"] = 0;
-AST["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-AST["17"]["Size"] = UDim2.new(0, 17, 17.91826, 0);
-AST["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["17"]["Name"] = [[LinesFrame]];
-AST["17"]["BackgroundTransparency"] = 0.85;
+G2L["17"] = Instance.new("Frame", G2L["10"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Size"] = UDim2.new(0, 17, 17.91826, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Name"] = [[LinesFrame]];
+G2L["17"]["BackgroundTransparency"] = 0.85;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame.TextLabelTemplate
-AST["18"] = Instance.new("TextLabel", AST["17"]);
-AST["18"]["TextWrapped"] = true;
-AST["18"]["BorderSizePixel"] = 0;
-AST["18"]["TextSize"] = 15;
-AST["18"]["TextScaled"] = true;
-AST["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["18"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-AST["18"]["BackgroundTransparency"] = 1;
-AST["18"]["Size"] = UDim2.new(0, 17, 0, 15);
-AST["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["18"]["Text"] = [[1]];
-AST["18"]["Name"] = [[TextLabelTemplate]];
+G2L["18"] = Instance.new("TextLabel", G2L["17"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 15;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Size"] = UDim2.new(0, 17, 0, 15);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[1]];
+G2L["18"]["Name"] = [[TextLabelTemplate]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame.UIListLayout
-AST["19"] = Instance.new("UIListLayout", AST["17"]);
-AST["19"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["19"] = Instance.new("UIListLayout", G2L["17"]);
+G2L["19"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Handler
-AST["1a"] = Instance.new("LocalScript", AST["f"]);
-AST["1a"]["Name"] = [[Handler]];
+G2L["1a"] = Instance.new("LocalScript", G2L["f"]);
+G2L["1a"]["Name"] = [[Handler]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top
-AST["1b"] = Instance.new("Frame", AST["f"]);
-AST["1b"]["Visible"] = false;
-AST["1b"]["ZIndex"] = 3;
-AST["1b"]["BorderSizePixel"] = 0;
-AST["1b"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-AST["1b"]["Size"] = UDim2.new(0, 17, 0, 17);
-AST["1b"]["Position"] = UDim2.new(1, -17, 0, 0);
-AST["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["1b"]["Name"] = [[Y_Top]];
+G2L["1b"] = Instance.new("Frame", G2L["f"]);
+G2L["1b"]["Visible"] = false;
+G2L["1b"]["ZIndex"] = 3;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+G2L["1b"]["Size"] = UDim2.new(0, 17, 0, 17);
+G2L["1b"]["Position"] = UDim2.new(1, -17, 0, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Name"] = [[Y_Top]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow
-AST["1c"] = Instance.new("Frame", AST["1b"]);
-AST["1c"]["Size"] = UDim2.new(0, 16, 0, 16);
-AST["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["1c"]["Name"] = [[Arrow]];
-AST["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"] = Instance.new("Frame", G2L["1b"]);
+G2L["1c"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1c"]["Name"] = [[Arrow]];
+G2L["1c"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-AST["1d"] = Instance.new("Frame", AST["1c"]);
-AST["1d"]["BorderSizePixel"] = 0;
-AST["1d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["1d"]["Size"] = UDim2.new(0, 7, 0, 1);
-AST["1d"]["Position"] = UDim2.new(0, 5, 0, 9);
-AST["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["1d"]["BackgroundTransparency"] = 0.5;
+G2L["1d"] = Instance.new("Frame", G2L["1c"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["1d"]["Size"] = UDim2.new(0, 7, 0, 1);
+G2L["1d"]["Position"] = UDim2.new(0, 5, 0, 9);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1d"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-AST["1e"] = Instance.new("Frame", AST["1c"]);
-AST["1e"]["BorderSizePixel"] = 0;
-AST["1e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["1e"]["Size"] = UDim2.new(0, 5, 0, 1);
-AST["1e"]["Position"] = UDim2.new(0, 6, 0, 8);
-AST["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["1e"]["BackgroundTransparency"] = 0.5;
+G2L["1e"] = Instance.new("Frame", G2L["1c"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["1e"]["Size"] = UDim2.new(0, 5, 0, 1);
+G2L["1e"]["Position"] = UDim2.new(0, 6, 0, 8);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1e"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-AST["1f"] = Instance.new("Frame", AST["1c"]);
-AST["1f"]["BorderSizePixel"] = 0;
-AST["1f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["1f"]["Size"] = UDim2.new(0, 3, 0, 1);
-AST["1f"]["Position"] = UDim2.new(0, 7, 0, 7);
-AST["1f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["1f"]["BackgroundTransparency"] = 0.5;
+G2L["1f"] = Instance.new("Frame", G2L["1c"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["1f"]["Size"] = UDim2.new(0, 3, 0, 1);
+G2L["1f"]["Position"] = UDim2.new(0, 7, 0, 7);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1f"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-AST["20"] = Instance.new("Frame", AST["1c"]);
-AST["20"]["BorderSizePixel"] = 0;
-AST["20"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["20"]["Size"] = UDim2.new(0, 1, 0, 1);
-AST["20"]["Position"] = UDim2.new(0, 8, 0, 6);
-AST["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["20"]["BackgroundTransparency"] = 0.5;
+G2L["20"] = Instance.new("Frame", G2L["1c"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["20"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["20"]["Position"] = UDim2.new(0, 8, 0, 6);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["20"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Button
-AST["21"] = Instance.new("TextButton", AST["1b"]);
-AST["21"]["BorderSizePixel"] = 0;
-AST["21"]["TextSize"] = 14;
-AST["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-AST["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["21"]["BackgroundTransparency"] = 1;
-AST["21"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["21"]["Text"] = [[]];
-AST["21"]["Name"] = [[Button]];
+G2L["21"] = Instance.new("TextButton", G2L["1b"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[]];
+G2L["21"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm
-AST["22"] = Instance.new("Frame", AST["f"]);
-AST["22"]["Visible"] = false;
-AST["22"]["ZIndex"] = 3;
-AST["22"]["BorderSizePixel"] = 0;
-AST["22"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-AST["22"]["Size"] = UDim2.new(0, 17, 0, 17);
-AST["22"]["Position"] = UDim2.new(1, -17, 1, -17);
-AST["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["22"]["Name"] = [[Y_Btm]];
+G2L["22"] = Instance.new("Frame", G2L["f"]);
+G2L["22"]["Visible"] = false;
+G2L["22"]["ZIndex"] = 3;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+G2L["22"]["Size"] = UDim2.new(0, 17, 0, 17);
+G2L["22"]["Position"] = UDim2.new(1, -17, 1, -17);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Name"] = [[Y_Btm]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Button
-AST["23"] = Instance.new("TextButton", AST["22"]);
-AST["23"]["BorderSizePixel"] = 0;
-AST["23"]["TextSize"] = 14;
-AST["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-AST["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["23"]["BackgroundTransparency"] = 1;
-AST["23"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["23"]["Text"] = [[]];
-AST["23"]["Name"] = [[Button]];
+G2L["23"] = Instance.new("TextButton", G2L["22"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[]];
+G2L["23"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow
-AST["24"] = Instance.new("Frame", AST["22"]);
-AST["24"]["Size"] = UDim2.new(0, 16, 0, 16);
-AST["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["24"]["Name"] = [[Arrow]];
-AST["24"]["BackgroundTransparency"] = 1;
+G2L["24"] = Instance.new("Frame", G2L["22"]);
+G2L["24"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["24"]["Name"] = [[Arrow]];
+G2L["24"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-AST["25"] = Instance.new("Frame", AST["24"]);
-AST["25"]["BorderSizePixel"] = 0;
-AST["25"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["25"]["Size"] = UDim2.new(0, 7, 0, 1);
-AST["25"]["Position"] = UDim2.new(0, 5, 0, 7);
-AST["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["25"]["BackgroundTransparency"] = 0.5;
+G2L["25"] = Instance.new("Frame", G2L["24"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["25"]["Size"] = UDim2.new(0, 7, 0, 1);
+G2L["25"]["Position"] = UDim2.new(0, 5, 0, 7);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["25"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-AST["26"] = Instance.new("Frame", AST["24"]);
-AST["26"]["BorderSizePixel"] = 0;
-AST["26"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["26"]["Size"] = UDim2.new(0, 5, 0, 1);
-AST["26"]["Position"] = UDim2.new(0, 6, 0, 8);
-AST["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["26"]["BackgroundTransparency"] = 0.5;
+G2L["26"] = Instance.new("Frame", G2L["24"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["26"]["Size"] = UDim2.new(0, 5, 0, 1);
+G2L["26"]["Position"] = UDim2.new(0, 6, 0, 8);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["26"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-AST["27"] = Instance.new("Frame", AST["24"]);
-AST["27"]["BorderSizePixel"] = 0;
-AST["27"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["27"]["Size"] = UDim2.new(0, 3, 0, 1);
-AST["27"]["Position"] = UDim2.new(0, 7, 0, 9);
-AST["27"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["27"]["BackgroundTransparency"] = 0.5;
+G2L["27"] = Instance.new("Frame", G2L["24"]);
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["27"]["Size"] = UDim2.new(0, 3, 0, 1);
+G2L["27"]["Position"] = UDim2.new(0, 7, 0, 9);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["27"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-AST["28"] = Instance.new("Frame", AST["24"]);
-AST["28"]["BorderSizePixel"] = 0;
-AST["28"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["28"]["Size"] = UDim2.new(0, 1, 0, 1);
-AST["28"]["Position"] = UDim2.new(0, 8, 0, 10);
-AST["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-AST["28"]["BackgroundTransparency"] = 0.5;
+G2L["28"] = Instance.new("Frame", G2L["24"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["28"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["28"]["Position"] = UDim2.new(0, 8, 0, 10);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["28"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft
-AST["29"] = Instance.new("Frame", AST["f"]);
-AST["29"]["Visible"] = false;
-AST["29"]["ZIndex"] = 3;
-AST["29"]["BorderSizePixel"] = 0;
-AST["29"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-AST["29"]["Size"] = UDim2.new(0, 17, 0, 17);
-AST["29"]["Position"] = UDim2.new(0, 0, 1, -17);
-AST["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["29"]["Name"] = [[X_Lft]];
+G2L["29"] = Instance.new("Frame", G2L["f"]);
+G2L["29"]["Visible"] = false;
+G2L["29"]["ZIndex"] = 3;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+G2L["29"]["Size"] = UDim2.new(0, 17, 0, 17);
+G2L["29"]["Position"] = UDim2.new(0, 0, 1, -17);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Name"] = [[X_Lft]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Button
-AST["2a"] = Instance.new("TextButton", AST["29"]);
-AST["2a"]["BorderSizePixel"] = 0;
-AST["2a"]["TextSize"] = 14;
-AST["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-AST["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["2a"]["BackgroundTransparency"] = 1;
-AST["2a"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["2a"]["Text"] = [[]];
-AST["2a"]["Name"] = [[Button]];
+G2L["2a"] = Instance.new("TextButton", G2L["29"]);
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[]];
+G2L["2a"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow
-AST["2b"] = Instance.new("Frame", AST["29"]);
-AST["2b"]["Size"] = UDim2.new(0, 16, 0, 16);
-AST["2b"]["Name"] = [[Arrow]];
-AST["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"] = Instance.new("Frame", G2L["29"]);
+G2L["2b"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["2b"]["Name"] = [[Arrow]];
+G2L["2b"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-AST["2c"] = Instance.new("Frame", AST["2b"]);
-AST["2c"]["BorderSizePixel"] = 0;
-AST["2c"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["2c"]["Size"] = UDim2.new(0, 1, 0, 1);
-AST["2c"]["Position"] = UDim2.new(0, 6, 0, 8);
-AST["2c"]["BackgroundTransparency"] = 0.5;
+G2L["2c"] = Instance.new("Frame", G2L["2b"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["2c"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2c"]["Position"] = UDim2.new(0, 6, 0, 8);
+G2L["2c"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-AST["2d"] = Instance.new("Frame", AST["2b"]);
-AST["2d"]["BorderSizePixel"] = 0;
-AST["2d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["2d"]["Size"] = UDim2.new(0, 1, 0, 3);
-AST["2d"]["Position"] = UDim2.new(0, 7, 0, 7);
-AST["2d"]["BackgroundTransparency"] = 0.5;
+G2L["2d"] = Instance.new("Frame", G2L["2b"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["2d"]["Size"] = UDim2.new(0, 1, 0, 3);
+G2L["2d"]["Position"] = UDim2.new(0, 7, 0, 7);
+G2L["2d"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-AST["2e"] = Instance.new("Frame", AST["2b"]);
-AST["2e"]["BorderSizePixel"] = 0;
-AST["2e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["2e"]["Size"] = UDim2.new(0, 1, 0, 5);
-AST["2e"]["Position"] = UDim2.new(0, 8, 0, 6);
-AST["2e"]["BackgroundTransparency"] = 0.5;
+G2L["2e"] = Instance.new("Frame", G2L["2b"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["2e"]["Size"] = UDim2.new(0, 1, 0, 5);
+G2L["2e"]["Position"] = UDim2.new(0, 8, 0, 6);
+G2L["2e"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-AST["2f"] = Instance.new("Frame", AST["2b"]);
-AST["2f"]["BorderSizePixel"] = 0;
-AST["2f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["2f"]["Size"] = UDim2.new(0, 1, 0, 7);
-AST["2f"]["Position"] = UDim2.new(0, 9, 0, 5);
-AST["2f"]["BackgroundTransparency"] = 0.5;
+G2L["2f"] = Instance.new("Frame", G2L["2b"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["2f"]["Size"] = UDim2.new(0, 1, 0, 7);
+G2L["2f"]["Position"] = UDim2.new(0, 9, 0, 5);
+G2L["2f"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght
-AST["30"] = Instance.new("Frame", AST["f"]);
-AST["30"]["Visible"] = false;
-AST["30"]["ZIndex"] = 3;
-AST["30"]["BorderSizePixel"] = 0;
-AST["30"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-AST["30"]["Size"] = UDim2.new(0, 17, 0, 17);
-AST["30"]["Position"] = UDim2.new(1, -18, 1, -17);
-AST["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["30"]["Name"] = [[X_Rght]];
+G2L["30"] = Instance.new("Frame", G2L["f"]);
+G2L["30"]["Visible"] = false;
+G2L["30"]["ZIndex"] = 3;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+G2L["30"]["Size"] = UDim2.new(0, 17, 0, 17);
+G2L["30"]["Position"] = UDim2.new(1, -18, 1, -17);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[X_Rght]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Button
-AST["31"] = Instance.new("TextButton", AST["30"]);
-AST["31"]["BorderSizePixel"] = 0;
-AST["31"]["TextSize"] = 14;
-AST["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-AST["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["31"]["BackgroundTransparency"] = 1;
-AST["31"]["Size"] = UDim2.new(1, 0, 1, 0);
-AST["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["31"]["Text"] = [[]];
-AST["31"]["Name"] = [[Button]];
+G2L["31"] = Instance.new("TextButton", G2L["30"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[]];
+G2L["31"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow
-AST["32"] = Instance.new("Frame", AST["30"]);
-AST["32"]["Size"] = UDim2.new(0, 16, 0, 16);
-AST["32"]["Name"] = [[Arrow]];
-AST["32"]["BackgroundTransparency"] = 1;
+G2L["32"] = Instance.new("Frame", G2L["30"]);
+G2L["32"]["Size"] = UDim2.new(0, 16, 0, 16);
+G2L["32"]["Name"] = [[Arrow]];
+G2L["32"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-AST["33"] = Instance.new("Frame", AST["32"]);
-AST["33"]["BorderSizePixel"] = 0;
-AST["33"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["33"]["Size"] = UDim2.new(0, 1, 0, 1);
-AST["33"]["Position"] = UDim2.new(0, 10, 0, 8);
-AST["33"]["BackgroundTransparency"] = 0.5;
+G2L["33"] = Instance.new("Frame", G2L["32"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["33"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["33"]["Position"] = UDim2.new(0, 10, 0, 8);
+G2L["33"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-AST["34"] = Instance.new("Frame", AST["32"]);
-AST["34"]["BorderSizePixel"] = 0;
-AST["34"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["34"]["Size"] = UDim2.new(0, 1, 0, 3);
-AST["34"]["Position"] = UDim2.new(0, 9, 0, 7);
-AST["34"]["BackgroundTransparency"] = 0.5;
+G2L["34"] = Instance.new("Frame", G2L["32"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["34"]["Size"] = UDim2.new(0, 1, 0, 3);
+G2L["34"]["Position"] = UDim2.new(0, 9, 0, 7);
+G2L["34"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-AST["35"] = Instance.new("Frame", AST["32"]);
-AST["35"]["BorderSizePixel"] = 0;
-AST["35"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["35"]["Size"] = UDim2.new(0, 1, 0, 5);
-AST["35"]["Position"] = UDim2.new(0, 8, 0, 6);
-AST["35"]["BackgroundTransparency"] = 0.5;
+G2L["35"] = Instance.new("Frame", G2L["32"]);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["35"]["Size"] = UDim2.new(0, 1, 0, 5);
+G2L["35"]["Position"] = UDim2.new(0, 8, 0, 6);
+G2L["35"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-AST["36"] = Instance.new("Frame", AST["32"]);
-AST["36"]["BorderSizePixel"] = 0;
-AST["36"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-AST["36"]["Size"] = UDim2.new(0, 1, 0, 7);
-AST["36"]["Position"] = UDim2.new(0, 7, 0, 5);
-AST["36"]["BackgroundTransparency"] = 0.5;
+G2L["36"] = Instance.new("Frame", G2L["32"]);
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["36"]["Size"] = UDim2.new(0, 1, 0, 7);
+G2L["36"]["Position"] = UDim2.new(0, 7, 0, 5);
+G2L["36"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Ground
-AST["37"] = Instance.new("Frame", AST["f"]);
-AST["37"]["Visible"] = false;
-AST["37"]["ZIndex"] = 2;
-AST["37"]["BorderSizePixel"] = 0;
-AST["37"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-AST["37"]["Size"] = UDim2.new(0, 17, 0, 17);
-AST["37"]["Position"] = UDim2.new(1, -17, 1, -17);
-AST["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["37"]["Name"] = [[Ground]];
+G2L["37"] = Instance.new("Frame", G2L["f"]);
+G2L["37"]["Visible"] = false;
+G2L["37"]["ZIndex"] = 2;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+G2L["37"]["Size"] = UDim2.new(0, 17, 0, 17);
+G2L["37"]["Position"] = UDim2.new(1, -17, 1, -17);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[Ground]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Bar
-AST["38"] = Instance.new("Frame", AST["f"]);
-AST["38"]["Visible"] = false;
-AST["38"]["ZIndex"] = 2;
-AST["38"]["BorderSizePixel"] = 0;
-AST["38"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-AST["38"]["Size"] = UDim2.new(0, 17, 1, -17);
-AST["38"]["Position"] = UDim2.new(1, -17, 0, 0);
-AST["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["38"]["Name"] = [[Y_Bar]];
-AST["38"]["BackgroundTransparency"] = 1;
+G2L["38"] = Instance.new("Frame", G2L["f"]);
+G2L["38"]["Visible"] = false;
+G2L["38"]["ZIndex"] = 2;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["38"]["Size"] = UDim2.new(0, 17, 1, -17);
+G2L["38"]["Position"] = UDim2.new(1, -17, 0, 0);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[Y_Bar]];
+G2L["38"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Bar
-AST["39"] = Instance.new("Frame", AST["f"]);
-AST["39"]["Visible"] = false;
-AST["39"]["ZIndex"] = 2;
-AST["39"]["BorderSizePixel"] = 0;
-AST["39"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-AST["39"]["Size"] = UDim2.new(1, -17, 0, 17);
-AST["39"]["Position"] = UDim2.new(0, 0, 1, -17);
-AST["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["39"]["Name"] = [[X_Bar]];
-AST["39"]["BackgroundTransparency"] = 1;
+G2L["39"] = Instance.new("Frame", G2L["f"]);
+G2L["39"]["Visible"] = false;
+G2L["39"]["ZIndex"] = 2;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["39"]["Size"] = UDim2.new(1, -17, 0, 17);
+G2L["39"]["Position"] = UDim2.new(0, 0, 1, -17);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Name"] = [[X_Bar]];
+G2L["39"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border
-AST["3a"] = Instance.new("UIStroke", AST["f"]);
-AST["3a"]["Name"] = [[Border]];
-AST["3a"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"] = Instance.new("UIStroke", G2L["f"]);
+G2L["3a"]["Name"] = [[Border]];
+G2L["3a"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow
-AST["3b"] = Instance.new("UIGradient", AST["3a"]);
-AST["3b"]["Name"] = [[Rainbow]];
-AST["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
+G2L["3b"] = Instance.new("UIGradient", G2L["3a"]);
+G2L["3b"]["Name"] = [[Rainbow]];
+G2L["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow.Rotation
-AST["3c"] = Instance.new("LocalScript", AST["3b"]);
-AST["3c"]["Name"] = [[Rotation]];
+G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
+G2L["3c"]["Name"] = [[Rotation]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Corner
-AST["3d"] = Instance.new("UICorner", AST["f"]);
-AST["3d"]["Name"] = [[Corner]];
-AST["3d"]["CornerRadius"] = UDim.new(0, 12);
+G2L["3d"] = Instance.new("UICorner", G2L["f"]);
+G2L["3d"]["Name"] = [[Corner]];
+G2L["3d"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Title
-AST["3e"] = Instance.new("TextLabel", AST["d"]);
-AST["3e"]["TextWrapped"] = true;
-AST["3e"]["TextStrokeTransparency"] = 0;
-AST["3e"]["BorderSizePixel"] = 0;
-AST["3e"]["TextSize"] = 14;
-AST["3e"]["TextScaled"] = true;
-AST["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["3e"]["BackgroundTransparency"] = 1;
-AST["3e"]["Size"] = UDim2.new(1, 0, 0, 32);
-AST["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["3e"]["Text"] = [[Astral Serverside]];
-AST["3e"]["Name"] = [[Title]];
-AST["3e"]["Position"] = UDim2.new(0, 0, 0, 10);
+G2L["3e"] = Instance.new("TextLabel", G2L["d"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["TextStrokeTransparency"] = 0;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundTransparency"] = 1;
+G2L["3e"]["Size"] = UDim2.new(1, 0, 0, 32);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[Astral Serverside]];
+G2L["3e"]["Name"] = [[Title]];
+G2L["3e"]["Position"] = UDim2.new(0, 0, 0, 10);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute
-AST["3f"] = Instance.new("TextButton", AST["d"]);
-AST["3f"]["TextStrokeTransparency"] = 0;
-AST["3f"]["BorderSizePixel"] = 0;
-AST["3f"]["TextSize"] = 24;
-AST["3f"]["AutoButtonColor"] = false;
-AST["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-AST["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-AST["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-AST["3f"]["AnchorPoint"] = Vector2.new(0.5, 0);
-AST["3f"]["BackgroundTransparency"] = 1;
-AST["3f"]["Size"] = UDim2.new(1, -50, 0, 30);
-AST["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-AST["3f"]["Text"] = [[Execute]];
-AST["3f"]["Name"] = [[Execute]];
-AST["3f"]["Position"] = UDim2.new(0.5, 0, 0, 235);
+G2L["3f"] = Instance.new("TextButton", G2L["d"]);
+G2L["3f"]["TextStrokeTransparency"] = 0;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextSize"] = 24;
+G2L["3f"]["AutoButtonColor"] = false;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["3f"]["BackgroundTransparency"] = 1;
+G2L["3f"]["Size"] = UDim2.new(1, -50, 0, 30);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[Execute]];
+G2L["3f"]["Name"] = [[Execute]];
+G2L["3f"]["Position"] = UDim2.new(0.5, 0, 0, 235);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border
-AST["40"] = Instance.new("UIStroke", AST["3f"]);
-AST["40"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-AST["40"]["Name"] = [[Border]];
-AST["40"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["40"] = Instance.new("UIStroke", G2L["3f"]);
+G2L["40"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["40"]["Name"] = [[Border]];
+G2L["40"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow
-AST["41"] = Instance.new("UIGradient", AST["40"]);
-AST["41"]["Name"] = [[Rainbow]];
-AST["41"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
+G2L["41"] = Instance.new("UIGradient", G2L["40"]);
+G2L["41"]["Name"] = [[Rainbow]];
+G2L["41"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow.Rotation
-AST["42"] = Instance.new("LocalScript", AST["41"]);
-AST["42"]["Name"] = [[Rotation]];
+G2L["42"] = Instance.new("LocalScript", G2L["41"]);
+G2L["42"]["Name"] = [[Rotation]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Corner
-AST["43"] = Instance.new("UICorner", AST["3f"]);
-AST["43"]["Name"] = [[Corner]];
-AST["43"]["CornerRadius"] = UDim.new(0, 12);
+G2L["43"] = Instance.new("UICorner", G2L["3f"]);
+G2L["43"]["Name"] = [[Corner]];
+G2L["43"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.Border.Rainbow.Rotation
 local function C_6()
-local script = AST["6"];
+local script = G2L["6"];
 	while true do
 		script.Parent.Rotation = script.Parent.Rotation + 4
 		wait()
@@ -701,7 +1701,7 @@ end;
 task.spawn(C_6);
 -- StarterGui.Astral Serverside.MainFrame.Drag
 local function C_7()
-local script = AST["7"];
+local script = G2L["7"];
 	local dragging, dragstart, startpos
 	script.Parent.InputBegan:Connect(function(input)
 		if input.UserInputType.Name == "MouseButton1" or input.UserInputType.Name == "Touch" then
@@ -721,7 +1721,7 @@ end;
 task.spawn(C_7);
 -- StarterGui.Astral Serverside.MainFrame.ScanningHandler
 local function C_c()
-local script = AST["c"];
+local script = G2L["c"];
 	--= Info =--
 	local mainframe = script.Parent
 	local scanningframe = mainframe:WaitForChild("ScanningFrame",3)
@@ -831,6 +1831,7 @@ local script = AST["c"];
 	if backdoored and vulnremote then
 		if credithint then fire(vulnremote,[[Instance.new("Hint",workspace).Text="This game was backdoored with: Astral SS  |  Join StrawberryCMD .gg/bXQfb3QWa8"]]) end
 		notify("Found backdoor: "..vulnremote.Name.."\nTime took: "..tostring(timer))
+		print("\nFound backdoor: "..vulnremote.Name.."\nTime took: "..tostring(timer))
 		scanningframe:FindFirstChild("Description").Text = "Found backdoor: "..vulnremote.Name.."\nTime took: "..tostring(timer).."\nLoading execution panel..."
 		coroutine.wrap(function()
 			task.wait(1)
@@ -858,7 +1859,7 @@ end;
 task.spawn(C_c);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Handler
 local function C_1a()
-local script = AST["1a"];
+local script = G2L["1a"];
 	--# FastColoredTextBox v3 by: C:\Drive
 	
 	local fctbelements = {
@@ -1161,7 +2162,7 @@ end;
 task.spawn(C_1a);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow.Rotation
 local function C_3c()
-local script = AST["3c"];
+local script = G2L["3c"];
 	while true do
 		script.Parent.Rotation = script.Parent.Rotation + 4
 		wait()
@@ -1173,7 +2174,7 @@ end;
 task.spawn(C_3c);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow.Rotation
 local function C_42()
-local script = AST["42"];
+local script = G2L["42"];
 	while true do
 		script.Parent.Rotation = script.Parent.Rotation + 4
 		wait()
@@ -1184,4 +2185,4 @@ local script = AST["42"];
 end;
 task.spawn(C_42);
 
-return AST["1"], require;
+return G2L["1"], require;
