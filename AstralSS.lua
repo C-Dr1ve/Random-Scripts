@@ -1772,7 +1772,7 @@ local script = ASTRAL["c"];
 	local vulnremote: RemoteEvent | RemoteFunction = nil
 	local backdoored: boolean = false
 	local credithint: boolean = true -- Just to give me credit for making Astral :3
-	local devmode: boolean = true -- This really does nothing, besides giving you more info
+	local devmode: boolean = false -- This really does nothing, besides giving you more info
 	
 	--= Setup =--
 	scanningframe.Visible = true
